@@ -1,8 +1,6 @@
 """Streamlit interface for the Project 2 constrained-portfolio decision."""
 
 from pathlib import Path
-
-import pandas as pd
 import streamlit as st
 
 from portfolio_engine import (
@@ -51,7 +49,27 @@ def allocation_table(results):
             }
         )
         rows.append(row)
-    return pd.DataFrame(rows)
+    return rows
+
+
+def render_table(rows):
+    """Render a simple Markdown table without importing Pandas or PyArrow.
+
+    This keeps the application usable in managed Windows environments where optional
+    binary data packages are blocked by application-control policy.
+    """
+    if not rows:
+        st.info("No rows to display.")
+        return
+    columns = list(dict.fromkeys(key for row in rows for key in row))
+    lines = [
+        "| " + " | ".join(columns) + " |",
+        "| " + " | ".join("---" for _ in columns) + " |",
+    ]
+    for row in rows:
+        values = [str(row.get(column, "")).replace("|", "/") for column in columns]
+        lines.append("| " + " | ".join(values) + " |")
+    st.markdown("\n".join(lines))
 
 
 def scenario_row(label, result, base):
@@ -108,7 +126,7 @@ st.caption(
 
 st.subheader("Constrained portfolio and required baselines")
 all_results = {"Constrained minimum-volatility portfolio": selected, **baselines}
-st.dataframe(allocation_table(all_results), width="stretch", hide_index=True)
+render_table(allocation_table(all_results))
 if selected is None:
     st.error("The process stops: no 5-point allocation meets every mandate rule under this scenario.")
 else:
@@ -123,7 +141,7 @@ input_rows = [
     }
     for ticker in TICKERS
 ]
-st.dataframe(pd.DataFrame(input_rows), width="stretch", hide_index=True)
+render_table(input_rows)
 
 st.subheader("Point-in-time signal — DGS10")
 st.write(
@@ -157,7 +175,7 @@ else:
         rows.append(scenario_row(label, outcome, base))
         if outcome is None or (outcome and maximum_weight_change(base["weights"], outcome["weights"]) > 0.20 + 1e-12):
             stop = True
-    st.dataframe(pd.DataFrame(rows), width="stretch", hide_index=True)
+    render_table(rows)
     if stop:
         st.error("Stop condition met: a scenario has no feasible allocation or moves a weight by more than 20 percentage points from base. Do not adopt; reassess the mandate and estimates.")
     else:
