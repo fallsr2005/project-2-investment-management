@@ -1,0 +1,13 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_commit_or_hash,notes
+Repository,yes,REPLACE_WITH_GITHUB_REPOSITORY_URL,Project 2 investment-management application,,,PENDING,PENDING,Publish the full project folder and confirm instructional-team access.
+Research evolution,no,N/A,Project 2 has no submitted research-evolution artifact,,,N/A,N/A,Do not attach an Edition A or B file unless Brightspace specifically requests it.
+Visible executed output,yes,REPLACE_WITH_GITHUB_VISIBLE_OUTPUT_URL,Visible executed output,2026-11-16,,,PENDING,Save the final commit/hash after the Locked Changed-Input Record is complete.
+Decision memo,yes,REPLACE_WITH_GITHUB_DECISION_MEMO_URL,Decision memo,,,PENDING,PENDING,Attach the same Markdown file to Brightspace.
+Validation and AI use,yes,REPLACE_WITH_GITHUB_VALIDATION_URL,Validation and AI use,,,PENDING,PENDING,Must contain a completed human-authored Locked Changed-Input Record before submission.
+Video 1,yes,REPLACE_WITH_YOUTUBE_VIDEO_1_URL,System evolution and checked AI output,MAX 3:00,PENDING,PENDING,PENDING,YouTube Unlisted or Public; transcript required.
+Transcript video 1,yes,REPLACE_WITH_GITHUB_TRANSCRIPT_1_URL,Corrected Video 1 transcript,,,PENDING,PENDING,Replace the template after recording.
+Video 2,yes,REPLACE_WITH_YOUTUBE_VIDEO_2_URL,Code walkthrough,MAX 5:00,PENDING,PENDING,PENDING,YouTube Unlisted or Public; transcript required.
+Transcript video 2,yes,REPLACE_WITH_GITHUB_TRANSCRIPT_2_URL,Corrected Video 2 transcript,,,PENDING,PENDING,Replace the template after recording.
+Video 3,yes,REPLACE_WITH_YOUTUBE_VIDEO_3_URL,Committee presentation with live app opening,MAX 5:00,PENDING,PENDING,PENDING,YouTube Unlisted or Public; transcript required.
+Transcript video 3,yes,REPLACE_WITH_GITHUB_TRANSCRIPT_3_URL,Corrected Video 3 transcript,,,PENDING,PENDING,Replace the template after recording.
+Optional deployed app,no,,Not deployed,,,,,A local runnable app and visible output are provided.

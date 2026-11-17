@@ -1,0 +1,56 @@
+{
+  "title": "Project 2 investment-management visible executed output",
+  "run_date": "2026-11-16",
+  "price_source": "Yahoo Finance monthly adjusted closes downloaded 2026-10-22",
+  "price_window": "2021-10-01 through 2026-09-01; 60 prices and 59 monthly returns",
+  "mandate": {
+    "objective": "minimize annualized historical volatility subject to estimated net annual return at least 6.0%",
+    "universe": ["SGOV", "SCHR", "USIG", "ACWI"],
+    "benchmark": "60% ACWI / 40% USIG",
+    "risk_measure": "annualized sample volatility from monthly simple returns",
+    "limits": ["long-only", "weights sum to 100%", "SGOV at least 10%"],
+    "grid": "5 percentage points"
+  },
+  "base_historical_estimates": {
+    "SGOV": {"annual_return": 0.03778435, "annual_volatility": 0.00482430},
+    "SCHR": {"annual_return": -0.00149733, "annual_volatility": 0.05443823},
+    "USIG": {"annual_return": 0.00038180, "annual_volatility": 0.07925804},
+    "ACWI": {"annual_return": 0.11249950, "annual_volatility": 0.14878233}
+  },
+  "portfolios": {
+    "constrained_minimum_volatility": {
+      "weights": {"SGOV": 0.70, "SCHR": 0.0, "USIG": 0.0, "ACWI": 0.30},
+      "gross_return": 0.06019889,
+      "annual_cost": 0.0,
+      "net_return": 0.06019889,
+      "volatility": 0.04555754,
+      "verdict": "pass"
+    },
+    "equal_weight": {
+      "weights": {"SGOV": 0.25, "SCHR": 0.25, "USIG": 0.25, "ACWI": 0.25},
+      "net_return": 0.03729208,
+      "volatility": 0.06542236,
+      "verdict": "fail: estimated net return below 6.0%"
+    },
+    "benchmark_60_40_acwi_usig": {
+      "weights": {"SGOV": 0.0, "SCHR": 0.0, "USIG": 0.40, "ACWI": 0.60},
+      "net_return": 0.06765242,
+      "volatility": 0.11588758,
+      "verdict": "fail: SGOV reserve below 10%"
+    }
+  },
+  "standard_stress_results": {
+    "ACWI return minus 1 percentage point": {"weights": {"SGOV": 0.65, "SCHR": 0.0, "USIG": 0.0, "ACWI": 0.35}, "net_return": 0.06043465, "volatility": 0.05290869},
+    "last 36 monthly returns": {"weights": {"SGOV": 0.90, "SCHR": 0.0, "USIG": 0.0, "ACWI": 0.10}, "net_return": 0.06046364, "volatility": 0.01192884},
+    "25-basis-point annual cost": {"weights": {"SGOV": 0.65, "SCHR": 0.0, "USIG": 0.0, "ACWI": 0.35}, "net_return": 0.06143465, "volatility": 0.05290869},
+    "20% SGOV minimum": {"weights": {"SGOV": 0.70, "SCHR": 0.0, "USIG": 0.0, "ACWI": 0.30}, "net_return": 0.06019889, "volatility": 0.04555754}
+  },
+  "point_in_time_signal": {
+    "series": "DGS10",
+    "as_known_on": "2026-09-30",
+    "latest_observation": "2026-09-29",
+    "value_percent": 5.26,
+    "use": "SCHR monitoring only; not an optimizer input or return forecast"
+  },
+  "limitations": "Historical estimates are not forecasts. The results omit taxes, turnover, drawdown, bid-ask spreads, investor-specific needs, and continuous optimization."
+}
