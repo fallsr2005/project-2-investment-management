@@ -42,19 +42,17 @@ The standard app stress suite changes the ACWI estimate, historical window, annu
 
 ## Locked Changed-Input Record — not yet complete
 
-**Status: pending required student action.** This record cannot be truthfully completed by an AI because the prediction must be human-authored with AI off and committed before the selected test is run. Do not submit this template as a completed record.
+**Status: prediction recorded before the selected run; execution and reconciliation pending.** The student supplied the prediction below and confirmed the terms “net return” and “more than 20 percentage points.” Codex transcribed it into this record. The cost scenario and prediction reasoning were discussed in this chat before this commit. The student reports an instructor-approved exception; compliance with the AI-off requirement remains for instructor determination. No AI-off attestation is made here.
 
-1. Close generative-AI tools. Choose a **new material input change that has not already been run or discussed with AI**.
-2. In the fields below, write the prediction yourself, commit this Markdown file, and record the immutable commit ID.
-3. Only then run the app once with the exact old/new values. Paste the app's before/after result, state the actual decision effect, and explain any divergence from the prediction.
+After this prediction is committed and pushed, close AI tools, preserve the base output, run the 0.45% annual-cost scenario, and preserve its output. Complete the after-run table using the actual results. Retain this prediction unchanged.
 
 | Required field | Student entry before the run |
 |---|---|
-| Timestamp and immutable Git commit | **PENDING** |
-| Exact input and units | **PENDING** |
-| Old value → new value | **PENDING** |
-| Human-authored AI-off prediction of output direction | **PENDING** |
-| Predicted decision effect | **PENDING** |
+| Timestamp and immutable Git commit | Recorded 2026-11-17 at 17:10 Eastern; the commit titled `Record student cost prediction before run` locks this text. Its hash will be recorded separately after committing. |
+| Exact input and units | Annual implementation-cost stress, percent per year; all 59 monthly returns, 10% minimum SGOV reserve, and zero ACWI return adjustment held fixed. |
+| Old value → new value | 0.00% → 0.45% annually (45 basis points). |
+| Student-supplied prediction of output direction | “I think that the net return estimate is going to decrease because the costs are taken away/subtracted from the gross return estimate. My app may select a different allocation to meet the 6.0% net return target which could maybe increase volatility. If no allocation qualifies, it should report no feasible portfolio.” |
+| Predicted decision effect | “Probably keep the pilot suggestion if the calculated portfolio stays feasible and between the stability limit. If no portfolio qualifies, I would stop, pause and reassess if that happened or if the allocation weight changes by more than 20 percentage points from the base case.” |
 
 | Required field | Student entry after the run |
 |---|---|
