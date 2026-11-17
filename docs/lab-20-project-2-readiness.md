@@ -52,8 +52,16 @@ Open `constrained_portfolio` and `mandate_verdict` in `portfolio_engine.py`. Exp
 
 | Required fact | Student entry |
 |---|---|
-| Partner question | **PENDING** |
-| Answer from the code | **PENDING** |
+| Partner question | Student reports that the partner asked while looking at the code: “Why did the portfolio's net-return estimate increase when you increased its implementation cost?” |
+| Answer from the code | Student reports explaining in their own words that costs reduce net return at fixed weights, but the app searches again after costs change. ACWI increased from 30% to 40%, raising gross estimated return enough to cover the higher cost; the selected net estimate increased from 6.02% to 6.32% and volatility also increased. `net = gross - annual_cost` applies the cost, and `constrained_portfolio` searches the feasible allocations again. This is a summary of the student-reported response, not a verbatim transcript. Codex supplied a study explanation during this discussion; an entirely AI-closed exchange is not independently verified. |
+| Role swap | **PENDING — student confirmation** |
+
+## Reflection
+
+| Prompt | Student response |
+|---|---|
+| What did the cold run reveal that you could not see? | **PENDING** |
+| What will you keep unchanged before the deadline? | **PENDING** |
 
 ## Decision line
 
