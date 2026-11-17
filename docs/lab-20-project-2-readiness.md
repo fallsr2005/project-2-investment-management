@@ -21,13 +21,13 @@ This must be completed by a partner from the published GitHub repository. Do not
 
 | Required fact | Partner entry |
 |---|---|
-| Repository URL tested | **PENDING — publish repository first** |
-| Exact command used | **PENDING** |
-| First failure, or `none` | **PENDING** |
-| Elapsed time | **PENDING** |
-| Where the visible decision result appeared | **PENDING** |
-| Fix made after the cold run, or `No fix needed; cold run clean` | **PENDING** |
-| Rerun result after the fix | **PENDING** |
+| Repository URL tested | `https://github.com/fallsr2005/project-2-investment-management` |
+| Exact command used | `cd project-2-investment-management`; `python -m venv .venv`; `.\.venv\Scripts\python.exe -m pip install -r requirements.txt`; `.\.venv\Scripts\python.exe -m streamlit run app.py` |
+| First failure, or `none` | None |
+| Elapsed time | 3 minutes 22 seconds from opening the repository to the running app |
+| Where the visible decision result appeared | Streamlit in the browser at `http://localhost:8504`; it displayed the constrained 70% SGOV / 30% ACWI allocation, baseline verdicts, DGS10 signal, stress suite, and pilot decision. |
+| Fix made after the cold run, or `No fix needed; cold run clean` | No fix needed; cold run clean. |
+| Rerun result after the fix | Not applicable; the first cold run was clean. |
 
 ## Local preflight fix — does not replace the partner cold run
 
