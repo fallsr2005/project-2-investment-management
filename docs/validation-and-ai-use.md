@@ -40,9 +40,9 @@ The standard app stress suite changes the ACWI estimate, historical window, annu
 | 2026-11-16 | ChatGPT/Codex | Created the standalone Streamlit structure, reusable portfolio engine, tests, documentation drafts, and recording guides using the student's Lab 13–19 files | Code and claims require student review. The student must verify every source, choose the recommendation, write the AI-off prediction, record the videos, and submit the work. |
 | Earlier labs | AI assistance documented in the saved lab files | Helped develop lab code and explanations | Prior work is retained as project evidence; it does not substitute for this project's validation record. |
 
-## Locked Changed-Input Record — not yet complete
+## Locked Changed-Input Record — prediction and observed result
 
-**Status: prediction recorded before the selected run; execution and reconciliation pending.** The student supplied the prediction below and confirmed the terms “net return” and “more than 20 percentage points.” Codex transcribed it into this record. The cost scenario and prediction reasoning were discussed in this chat before this commit. The student reports an instructor-approved exception; compliance with the AI-off requirement remains for instructor determination. No AI-off attestation is made here.
+**Status: prediction committed before the selected run; screenshots and after-run reconciliation recorded.** The student supplied the prediction below and confirmed the terms “net return” and “more than 20 percentage points.” Codex transcribed it into this record. The cost scenario and prediction reasoning were discussed in this chat before the prediction commit. The student reports an instructor-approved exception; compliance with the AI-off requirement remains for instructor determination. No AI-off attestation is made here.
 
 After this prediction is committed and pushed, close AI tools, preserve the base output, run the 0.45% annual-cost scenario, and preserve its output. Complete the after-run table using the actual results. Retain this prediction unchanged.
 
@@ -56,10 +56,10 @@ After this prediction is committed and pushed, close AI tools, preserve the base
 
 | Required field | Student entry after the run |
 |---|---|
-| Exact output before → after, with units | **PENDING** |
-| Actual decision effect | **PENDING** |
-| Prediction reconciliation and failure diagnosis, if different | **PENDING** |
-| Preserved evidence location | **PENDING** |
+| Exact output before → after, with units | User-supplied screenshots show annual cost 0.00% → 0.45%; SGOV 70% → 60%; ACWI 30% → 40%; SCHR and USIG remain 0%. Gross annual return estimate 6.02% → 6.77%; net annual return estimate 6.02% → 6.32%; annual volatility 4.56% → 6.03%. Mandate verdict remains PASS. Largest allocation change: 10 percentage points. |
+| Actual decision effect | The app continues to display pilot. Feasibility and the greater-than-20-point reversal condition are not breached. The new 60/40 SGOV/ACWI allocation is outside the memo's 65–75% SGOV pilot range, and 45 basis points exceeds its 25-basis-point cost review trigger; committee reassessment is therefore required before implementing this allocation. Student confirmation of the final judgment remains outstanding. |
+| Prediction reconciliation and failure diagnosis, if different | Allocation changed and volatility increased as anticipated. The optimized net estimate increased rather than decreased: the search moved more weight into ACWI to meet the net target. Holding the original allocation fixed would instead reduce its net estimate from about 6.02% to 5.57%, failing the 6.0% hurdle. The 5-point grid then selected a higher-gross-return allocation, which cleared the target after costs. This distinguishes cost drag on fixed weights from the result after optimization. The standard stress suite is fixed and does not change with the sidebar cost control; the selected scenario is shown in the top portfolio table. |
+| Preserved evidence location | [Before screenshot](evidence/cost-45bp/before.png) and [after screenshot](evidence/cost-45bp/after.png), supplied by the student after prediction commit `d49857a2c5e4b70b2493a2a5d837896d79b0a4c7` was pushed. This after-run interpretation was documented with Codex assistance. |
 
 ## Limitations
 
