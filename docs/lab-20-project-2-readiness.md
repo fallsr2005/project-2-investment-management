@@ -29,6 +29,12 @@ This must be completed by a partner from the published GitHub repository. Do not
 | Fix made after the cold run, or `No fix needed; cold run clean` | **PENDING** |
 | Rerun result after the fix | **PENDING** |
 
+## Local preflight fix — does not replace the partner cold run
+
+On 2026-11-17, a local app launch using the parent `FIN_43900/.venv` failed because Windows Application Control blocked Pandas/PyArrow's binary `_compute` component. The Project 2 app did not need Pandas, so `app.py` was changed to render its three result tables with Markdown rather than Pandas dataframes. The standalone app test then completed with zero app exceptions and zero displayed errors; all five portfolio-engine tests passed. The fix was committed and pushed as `8919427` (`Remove blocked Pandas dependency`).
+
+This is a local preflight check only. The partner must still perform and document an independent cold run from the GitHub repository.
+
 ## Changed input — AI-closed student entry required
 
 The Project 2 validation file contains the required Locked Changed-Input Record. For Lab 20, first close AI tools and choose a new load-bearing input that has not been run with AI assistance. Before the run, write the old and new value with units, expected direction of the decision numbers, and anticipated decision effect. Commit and push that prediction. Run once, preserve before/after output, then finish the reconciliation.
