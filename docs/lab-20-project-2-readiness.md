@@ -44,7 +44,7 @@ The Project 2 validation file contains the required Locked Changed-Input Record.
 | Prediction written before run | `docs/validation-and-ai-use.md` | Recorded; prior AI discussion and reported instructor exception disclosed; AI-off compliance remains for instructor determination. |
 | Immutable pre-run commit and GitHub push | Git history | `d49857a2c5e4b70b2493a2a5d837896d79b0a4c7`, pushed before the user-supplied run screenshots. |
 | Before and after output saved | `docs/evidence/cost-45bp/` | Before and after screenshots preserved. |
-| Actual decision effect and explanation | `docs/validation-and-ai-use.md` | App remains feasible; weights change by 10 points and volatility rises. The memo's cost and pilot-range triggers require reassessment; student final judgment pending. |
+| Actual decision effect and explanation | `docs/validation-and-ai-use.md` | Student confirms keeping the pilot subject to committee review, with reassessment before implementing the changed allocation. App remains feasible; weights change by 10 points and volatility rises. The memo's cost and pilot-range triggers require reassessment. |
 
 ## Code explanation — partner entry required
 
