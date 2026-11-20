@@ -1,0 +1,276 @@
+{
+  "run_utc": "2026-11-20T03:44:36.165434+00:00",
+  "price_sha256": "b8b78ad16aaef542fbcd266e65b2ff7502ff76a7a9fb1747869d31de9f8cc260",
+  "historical_estimates_not_forecasts": {
+    "names": [
+      "SGOV",
+      "SCHR",
+      "USIG",
+      "ACWI"
+    ],
+    "returns": {
+      "SGOV": 0.03778434701551999,
+      "SCHR": -0.0014973297177373528,
+      "USIG": 0.0003817987751668112,
+      "ACWI": 0.11249950468287337
+    },
+    "volatilities": {
+      "SGOV": 0.004824479471479768,
+      "SCHR": 0.054438226704887356,
+      "USIG": 0.0792580430454109,
+      "ACWI": 0.14878232816946643
+    },
+    "correlations": [
+      [
+        1.0,
+        0.249876542438301,
+        0.2968056353691621,
+        0.23825448487828457
+      ],
+      [
+        0.249876542438301,
+        1.0,
+        0.9228125575533657,
+        0.6078886430386644
+      ],
+      [
+        0.2968056353691621,
+        0.9228125575533657,
+        1.0,
+        0.7872105531786089
+      ],
+      [
+        0.23825448487828457,
+        0.6078886430386644,
+        0.7872105531786089,
+        1.0
+      ]
+    ],
+    "monthly_return_count": 59,
+    "first_price_date": "2021-10-01",
+    "last_price_date": "2026-09-01"
+  },
+  "base": {
+    "weights": {
+      "SGOV": 0.7000000000000001,
+      "SCHR": 0.0,
+      "USIG": 0.0,
+      "ACWI": 0.30000000000000004
+    },
+    "gross_return": 0.06019889431572602,
+    "annual_cost": 0.0,
+    "net_return": 0.06019889431572602,
+    "volatility": 0.04555753602380293,
+    "sgov_weight": 0.7000000000000001,
+    "checks": {
+      "Weights sum to 100%": true,
+      "Long-only": true,
+      "SGOV reserve >= 10%": true,
+      "Estimated net return >= 6.0%": true
+    },
+    "passes": true
+  },
+  "baselines": {
+    "Equal weight": {
+      "weights": {
+        "SGOV": 0.25,
+        "SCHR": 0.25,
+        "USIG": 0.25,
+        "ACWI": 0.25
+      },
+      "gross_return": 0.037292080188955704,
+      "annual_cost": 0.0,
+      "net_return": 0.037292080188955704,
+      "volatility": 0.06542235503922648,
+      "sgov_weight": 0.25,
+      "checks": {
+        "Weights sum to 100%": true,
+        "Long-only": true,
+        "SGOV reserve >= 10%": true,
+        "Estimated net return >= 6.0%": false
+      },
+      "passes": false
+    },
+    "60/40 ACWI/USIG benchmark": {
+      "weights": {
+        "SGOV": 0.0,
+        "SCHR": 0.0,
+        "USIG": 0.4,
+        "ACWI": 0.6
+      },
+      "gross_return": 0.06765242231979074,
+      "annual_cost": 0.0,
+      "net_return": 0.06765242231979074,
+      "volatility": 0.11588757920945292,
+      "sgov_weight": 0.0,
+      "checks": {
+        "Weights sum to 100%": true,
+        "Long-only": true,
+        "SGOV reserve >= 10%": false,
+        "Estimated net return >= 6.0%": true
+      },
+      "passes": false
+    }
+  },
+  "scenarios": {
+    "ACWI minus one point": {
+      "inputs": {
+        "acwi_return_adjustment": -0.01
+      },
+      "result": {
+        "weights": {
+          "SGOV": 0.65,
+          "SCHR": 0.0,
+          "USIG": 0.0,
+          "ACWI": 0.35000000000000003
+        },
+        "gross_return": 0.06043465219909368,
+        "annual_cost": 0.0,
+        "net_return": 0.06043465219909368,
+        "volatility": 0.05290869038661278,
+        "sgov_weight": 0.65,
+        "checks": {
+          "Weights sum to 100%": true,
+          "Long-only": true,
+          "SGOV reserve >= 10%": true,
+          "Estimated net return >= 6.0%": true
+        },
+        "passes": true
+      },
+      "status": "PILOT",
+      "reasons": [
+        "Numerical checks allow a classroom pilot, subject to evidence review and committee approval."
+      ]
+    },
+    "last 36 returns": {
+      "inputs": {
+        "last_36": true
+      },
+      "result": {
+        "weights": {
+          "SGOV": 0.9,
+          "SCHR": 0.0,
+          "USIG": 0.0,
+          "ACWI": 0.1
+        },
+        "gross_return": 0.06046363662996688,
+        "annual_cost": 0.0,
+        "net_return": 0.06046363662996688,
+        "volatility": 0.011928844221901753,
+        "sgov_weight": 0.9,
+        "checks": {
+          "Weights sum to 100%": true,
+          "Long-only": true,
+          "SGOV reserve >= 10%": true,
+          "Estimated net return >= 6.0%": true
+        },
+        "passes": true
+      },
+      "status": "REVIEW",
+      "reasons": [
+        "SGOV is outside the original 65\u201375% candidate review band.",
+        "A 20-percentage-point move requires committee escalation."
+      ]
+    },
+    "annual cost 25bp": {
+      "inputs": {
+        "annual_cost": 0.0025
+      },
+      "result": {
+        "weights": {
+          "SGOV": 0.65,
+          "SCHR": 0.0,
+          "USIG": 0.0,
+          "ACWI": 0.35000000000000003
+        },
+        "gross_return": 0.06393465219909368,
+        "annual_cost": 0.0025,
+        "net_return": 0.06143465219909368,
+        "volatility": 0.05290869038661278,
+        "sgov_weight": 0.65,
+        "checks": {
+          "Weights sum to 100%": true,
+          "Long-only": true,
+          "SGOV reserve >= 10%": true,
+          "Estimated net return >= 6.0%": true
+        },
+        "passes": true
+      },
+      "status": "PILOT",
+      "reasons": [
+        "Numerical checks allow a classroom pilot, subject to evidence review and committee approval."
+      ]
+    },
+    "SGOV minimum 20%": {
+      "inputs": {
+        "minimum_sgov": 0.2
+      },
+      "result": {
+        "weights": {
+          "SGOV": 0.7000000000000001,
+          "SCHR": 0.0,
+          "USIG": 0.0,
+          "ACWI": 0.30000000000000004
+        },
+        "gross_return": 0.06019889431572602,
+        "annual_cost": 0.0,
+        "net_return": 0.06019889431572602,
+        "volatility": 0.04555753602380293,
+        "sgov_weight": 0.7000000000000001,
+        "checks": {
+          "Weights sum to 100%": true,
+          "Long-only": true,
+          "SGOV reserve >= 20%": true,
+          "Estimated net return >= 6.0%": true
+        },
+        "passes": true
+      },
+      "status": "PILOT",
+      "reasons": [
+        "Numerical checks allow a classroom pilot, subject to evidence review and committee approval."
+      ]
+    },
+    "recorded annual cost 45bp": {
+      "inputs": {
+        "annual_cost": 0.0045
+      },
+      "result": {
+        "weights": {
+          "SGOV": 0.6000000000000001,
+          "SCHR": 0.0,
+          "USIG": 0.0,
+          "ACWI": 0.4
+        },
+        "gross_return": 0.06767041008246134,
+        "annual_cost": 0.0045,
+        "net_return": 0.06317041008246134,
+        "volatility": 0.06026820926450661,
+        "sgov_weight": 0.6000000000000001,
+        "checks": {
+          "Weights sum to 100%": true,
+          "Long-only": true,
+          "SGOV reserve >= 10%": true,
+          "Estimated net return >= 6.0%": true
+        },
+        "passes": true
+      },
+      "status": "REVIEW",
+      "reasons": [
+        "Annual implementation cost exceeds the 25-basis-point review trigger.",
+        "SGOV is outside the original 65\u201375% candidate review band."
+      ]
+    },
+    "infeasibility probe SGOV minimum 100%": {
+      "inputs": {
+        "minimum_sgov": 1.0
+      },
+      "result": null,
+      "status": "STOP",
+      "reasons": [
+        "No feasible allocation under the selected or reference inputs."
+      ]
+    }
+  },
+  "numerical_recommendation": "conditional classroom pilot",
+  "operational_hold": "Verify the DGS10 vintage before adoption; original source response is absent."
+}

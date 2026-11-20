@@ -61,6 +61,20 @@ After this prediction is committed and pushed, close AI tools, preserve the base
 | Prediction reconciliation and failure diagnosis, if different | Allocation changed and volatility increased as anticipated. The optimized net estimate increased rather than decreased: the search moved more weight into ACWI to meet the net target. Holding the original allocation fixed would instead reduce its net estimate from about 6.02% to 5.57%, failing the 6.0% hurdle. The 5-point grid then selected a higher-gross-return allocation, which cleared the target after costs. This distinguishes cost drag on fixed weights from the result after optimization. The standard stress suite is fixed and does not change with the sidebar cost control; the selected scenario is shown in the top portfolio table. |
 | Preserved evidence location | [Before screenshot](evidence/cost-45bp/before.png) and [after screenshot](evidence/cost-45bp/after.png), supplied by the student after prediction commit `d49857a2c5e4b70b2493a2a5d837896d79b0a4c7` was pushed. This after-run interpretation was documented with Codex assistance. |
 
+## Audit addendum — 2026-11-19
+
+The audit leaves the original pre-run prediction and screenshots preserved in their commits. It adds 12 passing calculation/regression tests, including agreement with the original base output, cost reoptimization, and STOP/REVIEW boundaries. `reproduce.py` creates `outputs/reproduced-results.json` with the price-file SHA-256, input estimates/correlations, baseline checks, selected scenarios, and run timestamp. This is a later verification run, not a replacement for the student's protected execution.
+
+The app previously always displayed pilot even under infeasible selected settings; the current app applies STOP/REVIEW/PILOT numerical rules and separately pauses adoption for the missing DGS10 source response. The SGOV constraint control can now tighten from the mandate's 10% floor to 100%, without silently relaxing it. The memo now distinguishes a candidate review band from the subset meeting the return hurdle.
+
+DGS10 provenance is unresolved: the original ALFRED response is not in the repository and the audit download timed out. The 5.26% observation is inherited from Lab 17 prose, not independently verified. The app does not perform live vintage comparisons. See the data card before relying on it. Likewise, the price download date is inherited from the lab record; the saved-price hash establishes which input was used, not independent vendor authenticity.
+
+AI use in this audit: Codex (exposed model gpt-6.1-sol) reviewed official course requirements, inspected code/documents, proposed and implemented corrections, wrote regression tests and reproduction tooling, and prepared the requirement audit. Earlier model/version details are not available in the preserved record and are not inferred. Student review remains required.
+
+The public assignment references a 300-point analytic rubric. Both attempted rubric paths returned 404 and the current GitHub file tree contained no rubric file. The submission architecture's six categories were inspected, but precise point levels could not be verified. Check the Brightspace rubric before final submission.
+
+Streamlit's app test exercised the base case (PILOT numerical status), 0.45% annual cost (REVIEW), and 100% SGOV floor (STOP), with no application exceptions. The test harness reported a Windows permission error while cleaning up its own temporary folder after completion; this does not establish a clean fresh-environment installation. The partner cold-run note remains the available independent setup evidence.
+
 ## Limitations
 
 - Historical mean returns, volatility, and correlations are uncertain and are not forecasts.

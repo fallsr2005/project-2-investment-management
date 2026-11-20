@@ -29,7 +29,8 @@ POINT_IN_TIME_SIGNAL = {
     "as_known_on": "2026-09-30",
     "last_observation_date": "2026-09-29",
     "value_percent": 5.26,
-    "publication_lag": "one business day in the saved ALFRED vintage",
+    "publication_lag": "one business day reported in the Lab 17 notes",
+    "evidence_status": "unverified: original ALFRED response is absent from this repository",
     "use": "monitoring condition for the SCHR Treasury sleeve; not an optimizer return input",
 }
 
@@ -220,6 +221,23 @@ def adjusted_estimates(estimates: Estimates, acwi_return_adjustment: float) -> E
 
 def maximum_weight_change(left: dict[str, float], right: dict[str, float]) -> float:
     return max(abs(left[name] - right[name]) for name in TICKERS)
+
+
+def decision_status(selected, base, annual_cost, suite_stopped=False):
+    """Apply the documented stop and committee-review triggers to current results."""
+    if selected is None or base is None:
+        return "STOP", ["No feasible allocation under the selected or reference inputs."]
+    change = maximum_weight_change(selected["weights"], base["weights"])
+    if suite_stopped or change > 0.20 + 1e-12:
+        return "STOP", ["A selected or standard stress moves a weight by more than 20 percentage points, or is infeasible."]
+    reasons = []
+    if annual_cost > 0.0025 + 1e-12:
+        reasons.append("Annual implementation cost exceeds the 25-basis-point review trigger.")
+    if not 0.65 - 1e-12 <= selected["weights"]["SGOV"] <= 0.75 + 1e-12:
+        reasons.append("SGOV is outside the original 65–75% candidate review band.")
+    if change >= 0.20 - 1e-12:
+        reasons.append("A 20-percentage-point move requires committee escalation.")
+    return ("REVIEW", reasons) if reasons else ("PILOT", ["Numerical checks allow a classroom pilot, subject to evidence review and committee approval."])
 
 
 def result_for_scenario(

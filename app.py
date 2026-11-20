@@ -13,6 +13,7 @@ from portfolio_engine import (
     constrained_portfolio,
     estimate_from_prices,
     maximum_weight_change,
+    decision_status,
 )
 
 
@@ -97,7 +98,7 @@ st.write("Historical adjusted-price estimates are not forecasts. The search is l
 with st.sidebar:
     st.header("Mandate and scenario")
     window = st.radio("Historical window", ("All 59 monthly returns", "Last 36 monthly returns"))
-    minimum_sgov = st.slider("Minimum SGOV reserve", 0, 50, int(DEFAULT_MINIMUM_SGOV * 100), 5) / 100
+    minimum_sgov = st.slider("Minimum SGOV reserve (%)", 10, 100, int(DEFAULT_MINIMUM_SGOV * 100), 5) / 100
     annual_cost = st.slider("Annual implementation-cost stress", 0.0, 1.0, 0.0, 0.05) / 100
     acwi_adjustment = st.slider("ACWI annual-return adjustment", -5.0, 5.0, 0.0, 0.25) / 100
     upload = st.file_uploader("Optional replacement monthly-price CSV", type="csv")
@@ -144,6 +145,7 @@ input_rows = [
 render_table(input_rows)
 
 st.subheader("Point-in-time signal — DGS10")
+st.warning("DGS10 evidence review required: the value below is transcribed from Lab 17 notes. The original ALFRED response is not bundled, and this audit could not retrieve it. Reverify and preserve the vintage before relying on this signal.")
 st.write(
     f"As known on **{POINT_IN_TIME_SIGNAL['as_known_on']}**, DGS10's latest available observation was "
     f"**{POINT_IN_TIME_SIGNAL['last_observation_date']} = {POINT_IN_TIME_SIGNAL['value_percent']:.2f}%**. "
@@ -153,10 +155,13 @@ st.caption(
     "Use: monitor the SCHR Treasury sleeve and verify that each decision uses an ALFRED vintage available at the decision date. "
     "This signal is not used as a return forecast. Source: " + POINT_IN_TIME_SIGNAL["source_url"]
 )
+st.markdown("[Full DGS10 data card](https://github.com/fallsr2005/project-2-investment-management/blob/main/docs/data-card-dgs10.md)")
 
 st.subheader("Standard stress suite")
+st.caption("Fixed comparisons against the all-history base: these rows do not follow sidebar settings. The top table shows the selected scenario.")
 base_estimates = estimate_from_prices(source, last_36=False)
 base = constrained_portfolio(base_estimates, 0.0, DEFAULT_MINIMUM_SGOV)
+stop = False
 if base is None:
     st.error("Bundled base case is unexpectedly infeasible; check the saved data.")
 else:
@@ -182,4 +187,9 @@ else:
         st.info("Stop condition not met in this fixed suite. The 36-month-window difference remains a material limitation and supports a pilot, not full adoption.")
 
 st.subheader("Decision rule")
-st.write("Recommendation: **pilot, not full adoption**. Start from the base allocation only after the committee accepts the historical-estimate limitation and point-in-time DGS10 rule. Reassess if no scenario is feasible, any stress moves a weight by more than 20 points, the DGS10 vintage is unavailable, or the committee changes the 6.0% target or SGOV reserve requirement.")
+status, reasons = decision_status(selected, base, annual_cost, stop)
+st.write(f"**Selected-scenario numerical decision: {status}.** " + " ".join(reasons))
+if selected is not None and base is not None:
+    st.write(f"Largest selected-scenario weight change from base: {maximum_weight_change(selected['weights'], base['weights']) * 100:.2f} percentage points.")
+st.write("Committee ask: authorize a classroom pilot only after source verification and approval. Candidate review band: 65–75% SGOV / 25–35% ACWI; every candidate must separately pass the return hurdle. Under the base estimates, 75% SGOV / 25% ACWI fails, so this band is not a pre-approved feasible range. Reassess before using a different allocation or costs above 25 basis points.")
+st.warning("Operational decision: pause adoption pending verification of the DGS10 vintage. A numerical PASS does not clear the evidence requirement. The numerical pilot recommendation remains conditional.")

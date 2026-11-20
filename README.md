@@ -10,6 +10,8 @@ This is a reproducible classroom portfolio-analysis app for FIN 43900. It evalua
 
 **Pilot, not full adoption.** The base 5-point-grid search selects 70% SGOV and 30% ACWI, with a 6.02% estimated annual return and 4.56% estimated annual volatility. The result is sensitive to its historical window: the last-36-return run selects 90% SGOV and 10% ACWI. See [the decision memo](docs/decision-memo.md) and [visible executed output](visible_output.json).
 
+The pilot is conditional: adoption is paused until the DGS10 source vintage is verified. The base feasible candidate range within the original review band is 65–70% SGOV / 30–35% ACWI, paired to total 100%; every mix must pass independently after costs. At 45 basis points of cost, 60/40 SGOV/ACWI requires committee reassessment.
+
 ## Mandate
 
 | Field | Classroom definition |
@@ -25,12 +27,16 @@ The app displays both required baselines—equal weight and the 60/40 benchmark�
 
 ## Run it
 
-Python 3.12 is recommended.
+Open a terminal in the repository folder (the folder containing `app.py`). Python 3.12 or 3.13 is recommended. If you downloaded a ZIP, extract it first. Run the following once to install dependencies:
 
 ```powershell
-cd project-2-investment-management
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+Then this single command starts the app:
+
+```powershell
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
@@ -42,7 +48,13 @@ The app starts with `data/prices.csv`. It accepts an optional replacement CSV on
 python -m unittest discover -s tests -v
 ```
 
-The test suite checks the saved data shape, both historical windows, constrained-portfolio feasibility, required baseline verdicts, and the weight-change calculation.
+The 12-test suite checks data validation, both windows, source-price calculations against preserved output, cost-driven reoptimization, baseline verdicts, single-asset volatility, and STOP/REVIEW boundary behavior.
+
+Reproduce an audit report without changing the original output:
+
+```powershell
+.\.venv\Scripts\python.exe reproduce.py --output outputs/reproduced-results.json
+```
 
 ## Project map
 
@@ -64,4 +76,6 @@ The test suite checks the saved data shape, both historical windows, constrained
 
 The price file was downloaded from Yahoo Finance history pages on 2026-10-22, as recorded in the original Lab 14/15 work. It uses monthly adjusted closes, which reflect distributions and splits but can be revised by the vendor. DGS10 is from the Federal Reserve Bank of St. Louis; see the data card for the saved ALFRED-vintage treatment.
 
-The project does not model taxes, bid-ask spreads, turnover, drawdown, taxes, investor liquidity needs, or realized performance. The 5-point grid is not a continuous optimizer. A passing arithmetic check does not validate a forward-looking return assumption.
+The project does not model taxes, bid-ask spreads, turnover, drawdown, investor liquidity needs, or realized performance. The 5-point grid is not a continuous optimizer. A passing arithmetic check does not validate a forward-looking return assumption. Adjusted closes already incorporate vendor distribution/split adjustments and fund-level effects; the explicit cost stress is additional implementation cost, not a second deduction of fund expenses.
+
+DGS10's original ALFRED response is absent; the displayed observation is inherited from Lab 17 notes and requires source verification before adoption. See the [requirement audit](docs/project-2-requirement-audit.md) for remaining submission blockers. Historical evidence and the original changed-input prediction remain preserved in Git history.

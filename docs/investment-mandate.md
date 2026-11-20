@@ -20,4 +20,8 @@ The committee should pause the process if the app finds no feasible allocation, 
 
 ## Out of scope
 
+### Audit clarification — 2026-11-19
+
+The DGS10 date/value is reported in Lab 17 prose, but the raw vintage response is absent and the audit download timed out. Quarantine the signal pending verification and pause adoption; the app's numerical portfolio checks can still be reproduced. See `data-card-dgs10.md` and `project-2-requirement-audit.md`. The original candidate review band is not an automatic mandate pass: the base-feasible candidates within it are 65–70% SGOV / 30–35% ACWI, paired to total 100%.
+
 This simplified mandate does not claim to model taxes, turnover, bid-ask spreads, maximum drawdown, personal spending needs, or realized performance. It does not treat SGOV as cash or a guaranteed loss limit.

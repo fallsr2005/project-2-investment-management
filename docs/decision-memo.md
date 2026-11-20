@@ -6,7 +6,7 @@ Education only — not investment advice.
 
 ## Recommendation and committee ask
 
-**Recommendation: pilot the process; do not fully adopt it.** Authorize a classroom pilot centered on **70% SGOV and 30% ACWI** under the stated 6.0% estimated-net-return objective and 10% SGOV minimum. For the pilot, an operating range of **65–75% SGOV and 25–35% ACWI** may be considered only after a documented monthly re-run; SCHR and USIG remain 0% in the base search. This is an analysis of historical estimates, not a recommendation to buy securities.
+**Recommendation: conditional classroom pilot centered on 70% SGOV and 30% ACWI; pause adoption until the DGS10 source vintage is verified.** Under the base estimates, the feasible grid candidates in the original review band are **65–70% SGOV and 30–35% ACWI**, paired to total 100%; SCHR and USIG are 0%. The previously stated 65–75% SGOV band was a candidate review band, not a guarantee of feasibility: its 75% SGOV / 25% ACWI endpoint estimates only 5.65% before costs and fails the 6.0% hurdle. Each allocation must be checked again after costs and input changes. This is a classroom analysis of historical estimates.
 
 The committee should approve the pilot only if it accepts the saved-data limitations, the point-in-time DGS10 monitoring rule, and the stop conditions below. The requested action is approval to operate the app and review its outputs—not authorization to place trades.
 
@@ -14,7 +14,7 @@ The committee should approve the pilot only if it accepts the saved-data limitat
 
 The application searches long-only allocations among SGOV, SCHR, USIG, and ACWI in 5-percentage-point steps. It minimizes annualized historical volatility subject to weights totaling 100%, SGOV at least 10%, and estimated net annual return at least 6.0%. The 60/40 ACWI/USIG allocation is the benchmark; annualized sample volatility is the risk measure.
 
-The base price window is 60 monthly adjusted-close observations, October 2021–September 2026, downloaded from Yahoo Finance on 2026-10-22. This creates 59 monthly simple returns. All return, volatility, and correlation figures are historical estimates. The point-in-time DGS10 monitoring record uses the ALFRED vintage known on 2026-09-30, whose latest observation was 2026-09-29 at 5.26%.
+The base price window is 60 monthly adjusted-close observations, October 2021–September 2026, reported downloaded from Yahoo Finance on 2026-10-22 in the prior lab notes. This creates 59 monthly simple returns. The date labels identify the first of the represented month, not the trade or availability date; September's close represents the completed September month. All estimates are historical. The DGS10 note reports 2026-09-29 at 5.26% as known on 2026-09-30, but its original ALFRED response is missing from the package and could not be retrieved during this audit. This claim remains unverified; it cannot support adoption until resolved.
 
 ## Base result and required comparisons
 
@@ -34,8 +34,9 @@ The base allocation is the lowest-volatility feasible allocation among the discr
 | Use last 36 monthly returns | 90% SGOV / 10% ACWI; 6.05% net; 1.19% volatility | The largest 20-point shift is material. It supports a pilot rather than full adoption. |
 | Apply 25-basis-point annual cost | 65% SGOV / 35% ACWI; 6.14% net; 5.29% volatility | Costs can move the feasible boundary; actual implementation costs require a fresh run. |
 | Raise SGOV minimum to 20% | Base 70% SGOV / 30% ACWI remains feasible | The current result exceeds the stated reserve floor. |
+| Recorded 45-basis-point annual cost | 60% SGOV / 40% ACWI; 6.32% net; 6.03% volatility | 10-point shift; student retains pilot subject to committee review before implementing this allocation. It breaches the cost and candidate-band review triggers. |
 
-The app stops the process if no feasible allocation remains, a standard stress moves any weight by more than 20 percentage points from base, or the required DGS10 point-in-time vintage is unavailable. An exactly 20-point movement is an escalation trigger for committee review even though it does not mechanically stop the test.
+The app's numerical status is STOP if no allocation is feasible or a selected/standard scenario moves a weight by more than 20 percentage points from base. It requests REVIEW for exactly 20 points, cost above 25 basis points, or SGOV outside the original candidate band. The DGS10 evidence gap separately pauses adoption. The fixed standard stress suite does not change with sidebar controls; the top table shows the selected scenario.
 
 ## Monitoring and reversal triggers
 

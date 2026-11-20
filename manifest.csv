@@ -1,13 +1,13 @@
 item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_commit_or_hash,notes
-Repository,yes,REPLACE_WITH_GITHUB_REPOSITORY_URL,Project 2 investment-management application,,,PENDING,PENDING,Publish the full project folder and confirm instructional-team access.
-Research evolution,no,N/A,Project 2 has no submitted research-evolution artifact,,,N/A,N/A,Do not attach an Edition A or B file unless Brightspace specifically requests it.
-Visible executed output,yes,REPLACE_WITH_GITHUB_VISIBLE_OUTPUT_URL,Visible executed output,2026-11-16,,,PENDING,Save the final commit/hash after the Locked Changed-Input Record is complete.
-Decision memo,yes,REPLACE_WITH_GITHUB_DECISION_MEMO_URL,Decision memo,,,PENDING,PENDING,Attach the same Markdown file to Brightspace.
-Validation and AI use,yes,REPLACE_WITH_GITHUB_VALIDATION_URL,Validation and AI use,,,PENDING,PENDING,Must contain a completed human-authored Locked Changed-Input Record before submission.
-Video 1,yes,REPLACE_WITH_YOUTUBE_VIDEO_1_URL,System evolution and checked AI output,MAX 3:00,PENDING,PENDING,PENDING,YouTube Unlisted or Public; transcript required.
-Transcript video 1,yes,REPLACE_WITH_GITHUB_TRANSCRIPT_1_URL,Corrected Video 1 transcript,,,PENDING,PENDING,Replace the template after recording.
-Video 2,yes,REPLACE_WITH_YOUTUBE_VIDEO_2_URL,Code walkthrough,MAX 5:00,PENDING,PENDING,PENDING,YouTube Unlisted or Public; transcript required.
-Transcript video 2,yes,REPLACE_WITH_GITHUB_TRANSCRIPT_2_URL,Corrected Video 2 transcript,,,PENDING,PENDING,Replace the template after recording.
-Video 3,yes,REPLACE_WITH_YOUTUBE_VIDEO_3_URL,Committee presentation with live app opening,MAX 5:00,PENDING,PENDING,PENDING,YouTube Unlisted or Public; transcript required.
-Transcript video 3,yes,REPLACE_WITH_GITHUB_TRANSCRIPT_3_URL,Corrected Video 3 transcript,,,PENDING,PENDING,Replace the template after recording.
-Optional deployed app,no,,Not deployed,,,,,A local runnable app and visible output are provided.
+Repository,yes,https://github.com/fallsr2005/project-2-investment-management,Project 2 investment-management application,,,Final instructor access check pending,Final freeze pending,Repository created; audit improvements must be pushed before final freeze.
+Research evolution,no,N/A,Not required for Project 2,,,N/A,N/A,Edition A and B are not submitted.
+Visible executed output,yes,https://github.com/fallsr2005/project-2-investment-management/blob/main/visible_output.json,Original base and stress output,2026-11-16,,Final access check pending,Final freeze pending,Also see outputs/reproduced-results.json for audit reproduction and scenario decisions.
+Decision memo,yes,https://github.com/fallsr2005/project-2-investment-management/blob/main/docs/decision-memo.md,Decision memo,,,Final access check pending,Final freeze pending,Attach this same Markdown file in Brightspace; conditional pilot with source-verification hold.
+Validation and AI use,yes,https://github.com/fallsr2005/project-2-investment-management/blob/main/docs/validation-and-ai-use.md,Validation and changed-input record,,,Final access check pending,Prediction d49857a2c5e4b70b2493a2a5d837896d79b0a4c7,Includes preserved screenshots and prior AI discussion; instructor exception not independently confirmed.
+Video 1,yes,PENDING_YOUTUBE_URL,System evolution and checked AI output,Maximum 3:00,PENDING,PENDING,Final recording pending,Opening AI/ownership and education statements; corrected captions and transcript required.
+Transcript video 1,yes,https://github.com/fallsr2005/project-2-investment-management/blob/main/docs/transcript-video-1.txt,Video 1 actual transcript,,,PENDING,Final transcript pending,Current file is a placeholder; replace after recording.
+Video 2,yes,PENDING_YOUTUBE_URL,Code walkthrough,Maximum 5:00,PENDING,PENDING,Final recording pending,Show repository code and reproduce results; demonstrate a meaningful test.
+Transcript video 2,yes,https://github.com/fallsr2005/project-2-investment-management/blob/main/docs/transcript-video-2.txt,Video 2 actual transcript,,,PENDING,Final transcript pending,Current file is a placeholder; replace after recording.
+Video 3,yes,PENDING_YOUTUBE_URL,Committee presentation with live app opening,Maximum 5:00,PENDING,PENDING,Final recording pending,Open with live app and required statements; end with committee ask and reversal trigger.
+Transcript video 3,yes,https://github.com/fallsr2005/project-2-investment-management/blob/main/docs/transcript-video-3.txt,Video 3 actual transcript,,,PENDING,Final transcript pending,Current file is a placeholder; replace after recording.
+Optional deployed app,no,N/A,Not deployed,,,,,Local runnable app provided; deployment optional under the public brief.
