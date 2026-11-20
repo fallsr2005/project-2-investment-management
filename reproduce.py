@@ -12,6 +12,7 @@ from pathlib import Path
 from portfolio_engine import (
     baseline_portfolios, constrained_portfolio, decision_status,
     estimate_from_prices, result_for_scenario,
+    POINT_IN_TIME_SIGNAL, verify_signal_evidence,
 )
 
 ROOT = Path(__file__).resolve().parent
@@ -41,7 +42,9 @@ def report():
         "baselines": baseline_portfolios(estimates, 0.0, 0.10),
         "scenarios": scenarios,
         "numerical_recommendation": "conditional classroom pilot",
-        "operational_hold": "Verify the DGS10 vintage before adoption; original source response is absent.",
+        "point_in_time_signal": POINT_IN_TIME_SIGNAL,
+        "signal_evidence_verified": verify_signal_evidence(),
+        "operational_hold": None if verify_signal_evidence() else "DGS10 source verification failed.",
     }
 
 

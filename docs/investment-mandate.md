@@ -5,6 +5,7 @@
 | Field | Definition |
 |---|---|
 | Intended user | Classroom investment committee reviewing whether to pilot the process |
+| Proposed horizon and cadence | Three-month classroom evaluation pilot, reviewed monthly; committee approval required. Annualized return/volatility are model conventions, not three-month promises. No actual trading is requested. |
 | Objective | Select the lowest estimated annual-volatility allocation with estimated **net** annual return at least 6.0% |
 | Permitted universe | SGOV (Treasury-bill reserve), SCHR (intermediate Treasury bonds), USIG (investment-grade corporate bonds), and ACWI (global equities) |
 | Benchmark | 60% ACWI / 40% USIG, used as a transparent comparison—not an allocation requirement |
@@ -22,6 +23,6 @@ The committee should pause the process if the app finds no feasible allocation, 
 
 ### Audit clarification — 2026-11-19
 
-The DGS10 date/value is reported in Lab 17 prose, but the raw vintage response is absent and the audit download timed out. Quarantine the signal pending verification and pause adoption; the app's numerical portfolio checks can still be reproduced. See `data-card-dgs10.md` and `project-2-requirement-audit.md`. The original candidate review band is not an automatic mandate pass: the base-feasible candidates within it are 65–70% SGOV / 30–35% ACWI, paired to total 100%.
+The earlier September DGS10 claim remains unsupported. As of the 2026-11-20 correction, the app instead uses a preserved ALFRED source-page snapshot captured at 06:08 UTC, reporting November 18 at 5.07%. It is admissible only for reviews at or after that capture time; it is not historical-vintage evidence. See `data-card-dgs10.md`. The original candidate review band is not an automatic mandate pass: the base-feasible candidates within it are 65–70% SGOV / 30–35% ACWI, paired to total 100%.
 
 This simplified mandate does not claim to model taxes, turnover, bid-ask spreads, maximum drawdown, personal spending needs, or realized performance. It does not treat SGOV as cash or a guaranteed loss limit.

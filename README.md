@@ -8,9 +8,9 @@ This is a reproducible classroom portfolio-analysis app for FIN 43900. It evalua
 
 ## Decision
 
-**Pilot, not full adoption.** The base 5-point-grid search selects 70% SGOV and 30% ACWI, with a 6.02% estimated annual return and 4.56% estimated annual volatility. The result is sensitive to its historical window: the last-36-return run selects 90% SGOV and 10% ACWI. See [the decision memo](docs/decision-memo.md) and [visible executed output](visible_output.json).
+**Pilot, not full adoption.** The base 5-point-grid search selects 70% SGOV and 30% ACWI, with a 6.02% estimated annual return and 4.56% estimated annual volatility. The result is sensitive to its historical window: the last-36-return run selects 90% SGOV and 10% ACWI. See [the decision memo](docs/decision-memo.md) and [current reproduced output](outputs/reproduced-results.json). The original [November 16 output](visible_output.json) is historical evidence; its DGS10 section has been superseded by the dated source correction.
 
-The pilot is conditional: adoption is paused until the DGS10 source vintage is verified. The base feasible candidate range within the original review band is 65–70% SGOV / 30–35% ACWI, paired to total 100%; every mix must pass independently after costs. At 45 basis points of cost, 60/40 SGOV/ACWI requires committee reassessment.
+The proposed horizon is a three-month classroom pilot with monthly reviews, subject to committee approval. The base feasible candidate range within the original review band is 65–70% SGOV / 30–35% ACWI, paired to total 100%; every mix must pass independently after costs. At 45 basis points of cost, 60/40 SGOV/ACWI requires committee reassessment. DGS10 is now verified against a preserved current source-page snapshot; it is not retrospective September-vintage evidence.
 
 ## Mandate
 
@@ -48,7 +48,7 @@ The app starts with `data/prices.csv`. It accepts an optional replacement CSV on
 python -m unittest discover -s tests -v
 ```
 
-The 12-test suite checks data validation, both windows, source-price calculations against preserved output, cost-driven reoptimization, baseline verdicts, single-asset volatility, and STOP/REVIEW boundary behavior.
+The 14-test suite checks data validation, both windows, source-price calculations against preserved output, cost-driven reoptimization, baseline verdicts, single-asset volatility, STOP/REVIEW boundary behavior, DGS10's date/value against the hashed raw source, and rejection of corrupted signal evidence.
 
 Reproduce an audit report without changing the original output:
 
@@ -78,4 +78,4 @@ The price file was downloaded from Yahoo Finance history pages on 2026-10-22, as
 
 The project does not model taxes, bid-ask spreads, turnover, drawdown, investor liquidity needs, or realized performance. The 5-point grid is not a continuous optimizer. A passing arithmetic check does not validate a forward-looking return assumption. Adjusted closes already incorporate vendor distribution/split adjustments and fund-level effects; the explicit cost stress is additional implementation cost, not a second deduction of fund expenses.
 
-DGS10's original ALFRED response is absent; the displayed observation is inherited from Lab 17 notes and requires source verification before adoption. See the [requirement audit](docs/project-2-requirement-audit.md) for remaining submission blockers. Historical evidence and the original changed-input prediction remain preserved in Git history.
+DGS10's current source-page capture is preserved with a timestamp and hash in `data/source-evidence/`; the app reads 2026-11-18 at 5.07%, available at capture on 2026-11-20 at 06:08 UTC. It does not substantiate the older September claim. See the [price lineage](docs/price-data-lineage.md), [rubric evidence map](docs/rubric-evidence-map.md), and [requirement audit](docs/project-2-requirement-audit.md). Historical evidence and the original changed-input prediction remain preserved in Git history.

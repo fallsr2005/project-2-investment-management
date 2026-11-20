@@ -5,7 +5,8 @@ The package has been audited but is not ready for final submission. See `project
 - [ ] Review every statement, source, numerical value, and the recommendation in this repository.
 - [x] Preserve the pre-run prediction commit, before/after screenshots, and subsequent explanation in `validation-and-ai-use.md`.
 - [ ] Confirm the instructor's treatment of prior AI discussion and the reported exception; do not remove the disclosure.
-- [ ] Verify and preserve the DGS10 ALFRED source response; correct all affected claims if it differs from the lab note.
+- [x] Capture and verify a current DGS10 ALFRED source-page response, with timestamp and hash; separate it from the unsupported old September claim.
+- [ ] Review the corrected current snapshot and proposed three-month pilot horizon before recording; approve the recommendation in your own words.
 - [ ] Run `python -m unittest discover -s tests -v` and start the app from the README on the final machine.
 - [ ] Record all three videos using the guides; Video 3 must begin with the app running live.
 - [ ] Enable captions, correct each actual transcript, and replace all three transcript templates.

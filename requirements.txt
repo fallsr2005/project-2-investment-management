@@ -1,1 +1,2 @@
-streamlit>=1.40,<2
+# Tested top-level version; Streamlit installs its own transitive dependencies.
+streamlit==1.66.1

@@ -1,13 +1,23 @@
-AI used: ChatGPT/Codex helped draft this recording guide; I reviewed it and own the analysis and decision.
+AI used: ChatGPT/Codex helped develop code, tests, documentation, and this recording draft. I am responsible for reviewing the analysis and owning the final decision.
 
 Education only — not investment advice.
 
-# Video 1 recording guide — system evolution and checked AI output
+# Video 1 — system evolution and checked AI output
 
-Target duration: 2:30–2:50. Record this in your own words and replace the matching `.txt` transcript with the corrected words actually spoken.
+Recording draft, not an actual transcript. Target 2:30–2:50; hard limit 3:00. Read/rehearse first and use only claims you can defend. Show a small webcam view unless accommodated. State the opening disclosures aloud.
 
-1. **0:00–0:20 — Decision.** State that the project recommends a pilot, not full adoption, because the historical window changes the result from 70/30 SGOV/ACWI to 90/10.
-2. **0:20–0:55 — System evolution.** Explain the progression from a Lab 13 mandate checker, to Lab 14 baselines, to Lab 15's constrained search, and then the Lab 17 DGS10 point-in-time monitoring rule.
-3. **0:55–1:35 — Checked AI output.** Open `portfolio_engine.py` and show the mandate checks or the 5-point grid. Show the unit-test command and its passing result. Explain that AI assisted the structure, but you checked the numbers against the saved CSV and required two baseline verdicts.
-4. **1:35–2:15 — Material change.** Show the stress table. Explain that reducing ACWI's estimate by one point moved 5 points into ACWI, while the historical window moved 20 points toward SGOV. State why this changed the decision from adopt to pilot.
-5. **2:15–2:45 — Limitation.** Explain the DGS10 vintage rule and that it is monitoring only, not a forecast. End with the stop condition and your committee ask.
+**Show the base app and recommendation.**
+
+My recommendation is a conditional classroom pilot, with committee review before using changed allocations. The base search selects 70 percent SGOV and 30 percent ACWI. Its 6.02 percent return estimate is historical, not a forecast.
+
+My system grew from the Lab 13 mandate checker into the Lab 14 baseline engine and Lab 15 interactive portfolio search. The final app applies the same mandate rules to equal weight, a transparent 60/40 ACWI/USIG benchmark, and the constrained portfolio. Passing software alone does not establish investment suitability.
+
+**Show the recorded before/after screenshots and validation explanation.**
+
+One claim I checked was that higher implementation costs would lower the selected portfolio's net estimate. The saved test increased annual cost from zero to 45 basis points. At unchanged weights, costs do lower net return. But the optimizer selected more equities: SGOV fell from 70 to 60 percent and ACWI rose from 30 to 40 percent. The new net estimate increased from 6.02 to 6.32 percent, and volatility rose from 4.56 to 6.03 percent. I qualify the original claim because reoptimization changes the comparison. The prior AI discussion is disclosed in the validation record; I do not claim an independently certified AI-off prediction.
+
+**Show the window stress and DGS10 data card.**
+
+Changing the estimation window moves a weight by 20 points, so my recommendation stays conditional. A later source audit also found that the old DGS10 claim lacked its original vintage response. The current app now verifies a captured ALFRED page reporting November 18 at 5.07 percent, available at the November 20 capture time. That correction improves traceability without pretending to prove the September vintage.
+
+My committee ask is a three-month classroom evaluation with monthly reviews. Pause if no allocation qualifies, a weight moves by more than 20 points, or source evidence fails; review cost and allocation-band breaches before implementation.

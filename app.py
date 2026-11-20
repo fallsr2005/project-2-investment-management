@@ -14,6 +14,7 @@ from portfolio_engine import (
     estimate_from_prices,
     maximum_weight_change,
     decision_status,
+    verify_signal_evidence,
 )
 
 
@@ -115,6 +116,7 @@ except ValueError as error:
     st.stop()
 
 st.subheader("Mandate")
+st.caption("Intended user: classroom investment committee. Proposed evaluation horizon: three months with monthly review; committee approval required. Annual estimates are not three-month return promises.")
 st.write(
     f"Objective: lowest estimated volatility with estimated **net** annual return of at least {OBJECTIVE_RETURN:.1%}; "
     f"universe: {', '.join(TICKERS)}; benchmark: 60% ACWI / 40% USIG; risk measure: annualized historical volatility; "
@@ -145,11 +147,15 @@ input_rows = [
 render_table(input_rows)
 
 st.subheader("Point-in-time signal — DGS10")
-st.warning("DGS10 evidence review required: the value below is transcribed from Lab 17 notes. The original ALFRED response is not bundled, and this audit could not retrieve it. Reverify and preserve the vintage before relying on this signal.")
+signal_verified = verify_signal_evidence()
+if signal_verified:
+    st.success("Source snapshot verified: saved ALFRED page hash and displayed date/value match. This is evidence available at retrieval time; it is not a retrospective backtest input.")
+else:
+    st.error("STOP: DGS10 source evidence is missing, changed, or inconsistent. Reassess before adoption.")
 st.write(
     f"As known on **{POINT_IN_TIME_SIGNAL['as_known_on']}**, DGS10's latest available observation was "
     f"**{POINT_IN_TIME_SIGNAL['last_observation_date']} = {POINT_IN_TIME_SIGNAL['value_percent']:.2f}%**. "
-    f"It had a {POINT_IN_TIME_SIGNAL['publication_lag']}."
+    f"Timing: {POINT_IN_TIME_SIGNAL['publication_lag']}."
 )
 st.caption(
     "Use: monitor the SCHR Treasury sleeve and verify that each decision uses an ALFRED vintage available at the decision date. "
@@ -191,5 +197,8 @@ status, reasons = decision_status(selected, base, annual_cost, stop)
 st.write(f"**Selected-scenario numerical decision: {status}.** " + " ".join(reasons))
 if selected is not None and base is not None:
     st.write(f"Largest selected-scenario weight change from base: {maximum_weight_change(selected['weights'], base['weights']) * 100:.2f} percentage points.")
-st.write("Committee ask: authorize a classroom pilot only after source verification and approval. Candidate review band: 65–75% SGOV / 25–35% ACWI; every candidate must separately pass the return hurdle. Under the base estimates, 75% SGOV / 25% ACWI fails, so this band is not a pre-approved feasible range. Reassess before using a different allocation or costs above 25 basis points.")
-st.warning("Operational decision: pause adoption pending verification of the DGS10 vintage. A numerical PASS does not clear the evidence requirement. The numerical pilot recommendation remains conditional.")
+st.write("Committee ask: authorize a three-month classroom evaluation with monthly review after source verification and approval. Within the original 65–75% SGOV candidate review band, the base-feasible grid range is 65–70% SGOV / 30–35% ACWI, paired to total 100%. Every candidate must separately pass after costs. The 75% SGOV / 25% ACWI endpoint fails the base return hurdle. Reassess before using a different allocation or costs above 25 basis points.")
+if not signal_verified:
+    st.error("Operational decision: STOP pending source-evidence verification.")
+else:
+    st.info("Committee decision: conditional classroom pilot only. Use this snapshot for the dated review; refresh and preserve new source evidence before any later decision. Historical portfolio estimates do not predict returns.")

@@ -8,6 +8,8 @@ from __future__ import annotations
 
 import csv
 import io
+import hashlib
+import re
 from dataclasses import dataclass
 from datetime import date
 from math import isfinite, sqrt
@@ -26,13 +28,30 @@ POINT_IN_TIME_SIGNAL = {
     "series_id": "DGS10",
     "name": "10-year Treasury constant-maturity rate",
     "source_url": "https://fred.stlouisfed.org/series/DGS10",
-    "as_known_on": "2026-09-30",
-    "last_observation_date": "2026-09-29",
-    "value_percent": 5.26,
-    "publication_lag": "one business day reported in the Lab 17 notes",
-    "evidence_status": "unverified: original ALFRED response is absent from this repository",
+    "as_known_on": "2026-11-20T06:08:22.334570+00:00",
+    "last_observation_date": "2026-11-18",
+    "value_percent": 5.07,
+    "publication_lag": "source updated 2026-11-19 at 15:16 CST; captured 2026-11-20 at 06:08 UTC",
+    "evidence_status": "captured current source page; not a reconstructed historical vintage",
+    "evidence_file": "data/source-evidence/dgs10-20261120T060822Z.html",
+    "evidence_sha256": "9a2017ca4195f97c8246fa92112cdff6c3fac4a94d06c72177b5d73f31da80e1",
     "use": "monitoring condition for the SCHR Treasury sleeve; not an optimizer return input",
 }
+
+
+def verify_signal_evidence():
+    """Fail closed if the saved source differs or lacks the displayed observation."""
+    source = Path(__file__).resolve().parent / POINT_IN_TIME_SIGNAL["evidence_file"]
+    try:
+        raw = source.read_bytes()
+    except OSError:
+        return False
+    if hashlib.sha256(raw).hexdigest() != POINT_IN_TIME_SIGNAL["evidence_sha256"]:
+        return False
+    text = raw.decode("utf-8")
+    match = re.search(r'(\d{4}-\d{2}-\d{2}):\s*<span class="series-meta-observation-value">([\d.]+)</span>', text)
+    return bool(match and match[1] == POINT_IN_TIME_SIGNAL["last_observation_date"]
+                and float(match[2]) == POINT_IN_TIME_SIGNAL["value_percent"])
 
 
 @dataclass(frozen=True)

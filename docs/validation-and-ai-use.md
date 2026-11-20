@@ -11,8 +11,8 @@ Education only — not investment advice.
 | Portfolio-price source | Yahoo Finance monthly adjusted-close history for SGOV, SCHR, USIG, and ACWI; downloaded 2026-10-22 in the completed Lab 14/15 work |
 | Price history used | 60 monthly observations from 2021-10-01 through 2026-09-01; 59 adjacent monthly simple returns |
 | Estimation method | Arithmetic mean monthly return × 12; sample standard deviation × √12; correlations from the same return series |
-| Signal source | Federal Reserve Bank of St. Louis DGS10, saved ALFRED vintage as known on 2026-09-30; see [data-card-dgs10.md](data-card-dgs10.md) |
-| Decision boundary | DGS10's latest saved observation was 2026-09-29 at 5.26%; it is a monitoring signal, not a return forecast or portfolio optimizer input |
+| Signal source | Federal Reserve Bank of St. Louis DGS10; current source-page response captured 2026-11-20 at 06:08 UTC; see [data-card-dgs10.md](data-card-dgs10.md) |
+| Decision boundary | Current review uses November 18 at 5.07%, supported only at or after the capture timestamp. The old September claim remains unverified in historical records. DGS10 is monitoring-only. |
 
 ## Tests and results
 
@@ -76,6 +76,16 @@ The public assignment references a 300-point analytic rubric. Both attempted rub
 Streamlit's app test exercised the base case (PILOT numerical status), 0.45% annual cost (REVIEW), and 100% SGOV floor (STOP), with no application exceptions. The test harness reported a Windows permission error while cleaning up its own temporary folder after completion; this does not establish a clean fresh-environment installation. The partner cold-run note remains the available independent setup evidence.
 
 ## Limitations
+
+## Completion addendum — 2026-11-20
+
+The current ALFRED page download succeeded on retry and is preserved in `data/source-evidence/` with UTC retrieval metadata and SHA-256 `9a2017ca4195f97c8246fa92112cdff6c3fac4a94d06c72177b5d73f31da80e1`. The source response reports November 18 at 5.07% and source update November 19 at 15:16 CST. `verify_signal_evidence()` verifies the response hash and parses the displayed observation; failure stops operational use. This closes the current-review snapshot evidence gap but does not validate the old September claim or establish a historical backtest. The dated November 19 addendum above records the earlier unresolved state.
+
+The supplied Brightspace rubric is now mapped in `rubric-evidence-map.md`: maximum 300; six maxima 45/45/60/45/75/30. The model exposed for this work is gpt-6.1-sol. Codex assisted with the source capture, new source-verification check, recording scripts, and rubric mapping. The proposed three-month pilot and monthly cadence are explicit classroom assumptions requiring student/committee review.
+
+The original prediction is locked at `d49857a2c5e4b70b2493a2a5d837896d79b0a4c7`. No after-run wording or source correction rewrites that historical commit. Source-verification and corrupted-source rejection bring the suite to 14 tests. Current results are reproduced in `outputs/reproduced-results.json`; the original November 16 output is a historical snapshot with superseded signal provenance. Price-data transformations and remaining vendor-source limitations are documented in `price-data-lineage.md`.
+
+### Remaining financial limitations
 
 - Historical mean returns, volatility, and correlations are uncertain and are not forecasts.
 - Yahoo adjusted closes can be revised; the saved data does not prove it was available at a particular historical trading time.

@@ -1,14 +1,31 @@
-AI used: ChatGPT/Codex helped draft this recording guide; I reviewed it and own the analysis and decision.
+AI used: ChatGPT/Codex helped develop code, tests, documentation, and this recording draft. I am responsible for reviewing the analysis and owning the final decision.
 
 Education only — not investment advice.
 
-# Video 3 recording guide — committee presentation
+# Video 3 — committee presentation
 
-Target duration: 4:00–4:45. This video must open with the app running live. Record this in your own words and replace the matching `.txt` transcript with the corrected words actually spoken.
+Recording draft, not an actual transcript. Target 4:00–4:40; hard limit 5:00. Open with the live app already on screen and speak the opening disclosures. Include a small webcam view unless accommodated.
 
-1. **0:00–0:35 — Live app and answer.** With the Streamlit app visible, state the pilot recommendation, base 70% SGOV / 30% ACWI allocation, 6.02% historical estimate, 4.56% historical volatility, and 10% reserve rule.
-2. **0:35–1:15 — Mandate and comparisons.** Show the equal-weight failure because it misses 6.0%, and the 60/40 benchmark failure because it has no SGOV reserve. Explain the app tests every 5-point long-only allocation.
-3. **1:15–2:10 — Evidence.** Show the historical inputs and explain their October 2021–September 2026 window. State clearly that they are historical estimates, not forecasts.
-4. **2:10–3:00 — Stress and risks.** Show the last-36-month result and the 20-point weight change. Explain why it rules out full adoption. Discuss the cost and return-estimate sensitivity.
-5. **3:00–3:35 — Point-in-time signal.** Show DGS10. Explain the September 30 ALFRED vintage and the rule not to substitute current data for older decisions.
-6. **3:35–4:30 — Ask and triggers.** Ask the committee to authorize a classroom pilot only. State the no-feasible-allocation, greater-than-20-point, DGS10-vintage, cost, and mandate-change triggers.
+**Live app: base allocation and mandate.**
+
+I recommend a conditional three-month classroom pilot with monthly committee review. I am asking permission to evaluate the process, not to place trades. The base allocation is 70 percent SGOV and 30 percent ACWI. Estimated annual return is 6.02 percent with 4.56 percent annual volatility. These are historical estimates, not promised outcomes.
+
+The mandate minimizes estimated volatility while meeting a six-percent net-return hurdle, holding at least ten percent SGOV, remaining long-only, and totaling one hundred percent. The proposed review horizon is a governance assumption, while the annualized risk and return conventions describe the model.
+
+**Show both baselines.**
+
+Equal weight earns only a 3.73-percent historical estimate and fails the return hurdle. The 60-percent ACWI / 40-percent USIG benchmark reaches 6.77 percent but has no SGOV and fails the reserve floor. Both are transparent comparison portfolios, not automatic recommendations. The constrained base result meets the stated numerical rules with less estimated volatility than either comparator.
+
+**Show stress suite and recorded cost result.**
+
+The five-year labeled price sample supplies 59 monthly returns. Using only the last 36 changes the selected allocation to 90 percent SGOV and ten percent ACWI: a 20-point difference. That sensitivity is why I do not seek full adoption. Reducing the ACWI return estimate by one percentage point requires more equity to meet the hurdle. Costs also matter: the recorded 45-basis-point scenario selects 60 percent SGOV and 40 percent ACWI, estimates 6.32 percent net return and 6.03 percent volatility, and requires committee review.
+
+Within the original candidate review band, the base-feasible grid range is 65–70 percent SGOV paired with 30–35 percent ACWI. Every candidate must pass after costs. I would reassess before implementing the 60/40 cost result because it falls outside that range and exceeds the 25-basis-point cost review trigger.
+
+**Show the DGS10 card and current source evidence.**
+
+DGS10 monitors Treasury-rate conditions relevant to SCHR, not future portfolio returns. The saved source page reports November 18 at 5.07 percent, captured November 20 at 06:08 UTC. It supports this current review only. The earlier September claim remains unverified, and no historical timing result is inferred from this newer capture.
+
+**End with action and reversals.**
+
+Authorize a limited classroom pilot only after reviewing the evidence and assumptions. Pause for infeasibility, a greater-than-20-point allocation move, or failed source verification. Escalate exactly 20 points, costs above 25 basis points, or a candidate outside the original band. Taxes, turnover, drawdown, and actual investor cash needs are not modeled. Those limitations restrict the decision even when the app says PASS.

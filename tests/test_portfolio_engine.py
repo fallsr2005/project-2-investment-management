@@ -15,6 +15,7 @@ from portfolio_engine import (  # noqa: E402
     decision_status,
     volatility,
     adjusted_estimates,
+    verify_signal_evidence,
 )
 
 
@@ -22,6 +23,13 @@ DATA = Path(__file__).resolve().parents[1] / "data" / "prices.csv"
 
 
 class PortfolioEngineTests(unittest.TestCase):
+    def test_dgs10_value_and_date_match_hashed_source(self):
+        self.assertTrue(verify_signal_evidence())
+
+    def test_corrupted_signal_source_fails_closed(self):
+        from unittest.mock import patch
+        with patch("portfolio_engine.Path.read_bytes", return_value=b"changed response"):
+            self.assertFalse(verify_signal_evidence())
     def test_base_matches_preserved_screenshot(self):
         estimates = estimate_from_prices(DATA)
         result = constrained_portfolio(estimates, 0, .10)
