@@ -10,6 +10,8 @@ Education only — not investment advice.
 
 The committee should approve the pilot only if it accepts the saved-data limitations, the point-in-time DGS10 monitoring rule, and the stop conditions below. The requested action is approval to operate the app and review its outputs—not authorization to place trades.
 
+Student decision confirmed November 20, 2026: approve this recommendation for a three-month classroom evaluation with monthly reviews, the stated candidate allocation range, and the review/stop conditions. This confirms the student's judgment; actual committee authorization remains the requested action. Three months can evaluate operation and decision consistency, but cannot establish attainment of the 6% annual return estimate or reliability across market cycles.
+
 ## Mandate and as-of boundary
 
 The application searches long-only allocations among SGOV, SCHR, USIG, and ACWI in 5-percentage-point steps. It minimizes annualized historical volatility subject to weights totaling 100%, SGOV at least 10%, and estimated net annual return at least 6.0%. The 60/40 ACWI/USIG allocation is the benchmark; annualized sample volatility is the risk measure.
