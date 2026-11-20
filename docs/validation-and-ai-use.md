@@ -87,6 +87,8 @@ The original prediction is locked at `d49857a2c5e4b70b2493a2a5d837896d79b0a4c7`.
 
 ### Remaining financial limitations
 
+Package verification: the committed source was exported using `git archive` and extracted into a separate local folder. All 14 tests passed there, including the exact raw-source hash check. This verifies tracked-file completeness with the existing Python environment; it is not a new dependency installation or a replacement for the partner cold run. The final app test also verified the source-success banner, REVIEW at 45bp, and STOP at a 100% SGOV floor without app exceptions. Streamlit's test harness again emitted a temporary-directory cleanup permission error after completion; no Windows security setting was changed.
+
 - Historical mean returns, volatility, and correlations are uncertain and are not forecasts.
 - Yahoo adjusted closes can be revised; the saved data does not prove it was available at a particular historical trading time.
 - The 5-point grid is not a continuous optimizer.
