@@ -6,6 +6,9 @@ The package has been audited but is not ready for final submission. See `project
 - [x] Preserve the pre-run prediction commit, before/after screenshots, and subsequent explanation in `validation-and-ai-use.md`.
 - [ ] Confirm the instructor's treatment of prior AI discussion and the reported exception; do not remove the disclosure.
 - [x] Capture and verify a current DGS10 ALFRED source-page response, with timestamp and hash; separate it from the unsupported old September claim.
+- [x] Preserve original price-downloader/lab evidence and November 22 raw responses for all four ETFs; reproduce a later-source comparison without replacing the app input.
+- [x] Preserve the additional ACWI prediction commit, student-supplied reconciliation and decision effect, and nine before/after/restored screenshots; no AI-off certification is made.
+- [ ] Review remaining original price-vintage and third-party data-rights limitations in `price-data-lineage.md`.
 - [x] Approve the three-month classroom pilot, monthly reviews, candidate allocation range, and review/stop conditions (student confirmation November 20, 2026).
 - [ ] Finish reviewing current source evidence and all final wording before recording.
 - [ ] Run `python -m unittest discover -s tests -v` and start the app from the README on the final machine.

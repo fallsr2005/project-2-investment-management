@@ -18,6 +18,8 @@ The application searches long-only allocations among SGOV, SCHR, USIG, and ACWI 
 
 The base price window is 60 monthly adjusted-close observations, October 2021–September 2026, reported downloaded from Yahoo Finance on 2026-10-22 in the prior lab notes. This creates 59 monthly simple returns. The date labels identify the first of the represented month, not the trade or availability date; September's close represents the completed September month. All estimates are historical. The current DGS10 observation is November 18 at 5.07%, from a raw ALFRED page captured November 20 at 06:08 UTC. Its hash and date/value are checked by the app; it is information available for this current review, not proof of an old vintage. The earlier September claim is retained only in historical records and remains unverified.
 
+A separate November 22 capture of all four Yahoo series now corroborates the saved price history: later adjusted-price levels differ, but the base allocation and both baseline verdicts remain unchanged. Raw responses, timestamps, hashes, and an offline comparison are linked in the [price lineage](price-data-lineage.md). This does not establish the original October retrieval date or third-party redistribution rights; these remain conditions for use beyond this classroom review.
+
 ## Base result and required comparisons
 
 | Portfolio | SGOV / SCHR / USIG / ACWI | Estimated net return | Estimated volatility | Mandate verdict |

@@ -4,6 +4,18 @@ Education only — not investment advice.
 
 # Validation and AI use
 
+## Current price-source audit — 2026-11-22
+
+Current verification: **17 tests pass** (14 prior engine/signal checks plus three price-lineage tests). [Price lineage](price-data-lineage.md) now bundles the original downloader and lab-source excerpts, a hashed workspace comparison proving identical lab/project CSV rows, and four dated raw Yahoo responses retrieved November 22 at 23:38 UTC. The [comparison report](../data/source-evidence/prices-20261122T233854Z/comparison-report.json) reconstructs all 60 months per ticker and compares them with the unchanged app input. All later-capture mean-return and volatility changes are below 0.00002 percentage points in magnitude. The base allocation and baseline verdicts are unchanged. This is a later source check, not proof of an October download or an original point-in-time price vintage. Third-party redistribution rights remain unverified; applicable source links and the terms-retrieval limitation are in the lineage document.
+
+Reproduce offline with `python audit_price_sources.py --snapshot data/source-evidence/prices-20261122T233854Z`. The audit checks response hashes and exact months, rejects incorrect symbols and null/invalid prices, reconstructs the six-decimal comparison CSV, and compares its recomputed report with the preserved report. `.gitattributes` preserves the new source-evidence bytes across platforms. The existing `data/prices.csv`, app calculations, original prediction, and original output are unchanged.
+
+Export verification initially exposed Windows/Git newline conversion of `data/prices.csv`: the prices were identical but the byte hash changed. A `.gitattributes` rule now preserves the input CSV bytes as well as the source evidence. This addresses a packaging failure without changing any price or historical prediction.
+
+Material AI use on November 22: ChatGPT/Codex inspected workspace evidence, captured public vendor responses, wrote the audit script and three evidence/failure tests, and updated source documentation and readiness records. An exact model/version identifier is not exposed for this session and is not inferred. A blanket claim that a matching input hash proves vendor authenticity was rejected: a hash identifies bytes, while the separately dated source comparison supplies additional corroboration. Student review of these findings remains required.
+
+The dated November 19 and November 20 addenda below preserve earlier audit states. Earlier 14-test counts and missing-source statements describe those dates; the current counts and price evidence are given here. Historical procedural instructions in the original cost-test record are not instructions to rerun or rewrite its prediction.
+
 ## Additional ACWI changed-input evidence — 2026-11-22
 
 The student supplied a new ACWI annual-return-adjustment prediction (0.00 to -3.00 percentage points), followed by before/after screenshots, their own comparison, explanation, actual decision effect, and screenshots proving restoration to base. See the [unchanged pre-run prediction](changed-input-prediction-acwi.md) and [results, provenance, and nine evidence screenshots](changed-input-results-acwi.md). The prediction was committed and pushed at `054f0d3a82d62a772c13f495ccc084646d1df2af` before the changed-run screenshots were supplied. The selected result was 50% SGOV / 50% ACWI, 6.01% estimated net return, 7.50% volatility, PASS mandate verdict, and REVIEW numerical decision; restoration returned to 70% SGOV / 30% ACWI and PILOT.

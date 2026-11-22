@@ -48,13 +48,21 @@ The app starts with `data/prices.csv`. It accepts an optional replacement CSV on
 python -m unittest discover -s tests -v
 ```
 
-The 14-test suite checks data validation, both windows, source-price calculations against preserved output, cost-driven reoptimization, baseline verdicts, single-asset volatility, STOP/REVIEW boundary behavior, DGS10's date/value against the hashed raw source, and rejection of corrupted signal evidence.
+The 17-test suite checks data validation, both windows, calculations against preserved output, cost-driven reoptimization, baseline verdicts, single-asset volatility, STOP/REVIEW boundaries, DGS10 source verification, and the captured Yahoo price lineage. Source tests reject altered raw responses, incorrect ticker identities, missing months, and null adjusted prices.
 
 Reproduce an audit report without changing the original output:
 
 ```powershell
 .\.venv\Scripts\python.exe reproduce.py --output outputs/reproduced-results.json
 ```
+
+Verify the November 22 price-source capture entirely offline:
+
+```powershell
+python audit_price_sources.py --snapshot data/source-evidence/prices-20261122T233854Z
+```
+
+This checks raw-response hashes and reconstructs the later comparison dataset and report without changing the app's input. See [price lineage](docs/price-data-lineage.md) for results and boundaries.
 
 ## Project map
 
@@ -74,7 +82,7 @@ Reproduce an audit report without changing the original output:
 
 ## Sources and limitations
 
-The price file was downloaded from Yahoo Finance history pages on 2026-10-22, as recorded in the original Lab 14/15 work. It uses monthly adjusted closes, which reflect distributions and splits but can be revised by the vendor. DGS10 is from the Federal Reserve Bank of St. Louis; see the data card for the saved ALFRED-vintage treatment.
+Lab 14/15 records report a Yahoo Finance chart-endpoint download on 2026-10-22; the original raw response is unavailable. The original downloader and relevant lab excerpts are bundled. A separate November 22 capture now preserves all four current raw responses, retrieval times, hashes, and a reproducible comparison. Price levels differ, while the base mix remains 70% SGOV / 30% ACWI and displays the same 6.02% return and 4.56% volatility. This corroborates the later source comparison, not the original download timestamp or historical information availability. The data uses adjusted closes, which can be revised. DGS10 is from the Federal Reserve Bank of St. Louis; see its data card for the captured current-review evidence. Third-party redistribution rights remain unverified; see the price-lineage record.
 
 The project does not model taxes, bid-ask spreads, turnover, drawdown, investor liquidity needs, or realized performance. The 5-point grid is not a continuous optimizer. A passing arithmetic check does not validate a forward-looking return assumption. Adjusted closes already incorporate vendor distribution/split adjustments and fund-level effects; the explicit cost stress is additional implementation cost, not a second deduction of fund expenses.
 

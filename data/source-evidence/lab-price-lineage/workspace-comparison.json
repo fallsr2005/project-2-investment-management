@@ -1,0 +1,25 @@
+{
+  "inspected_utc": "2026-11-22T23:39:56.803766+00:00",
+  "scope": "Current workspace inspection, not authenticated original download evidence.",
+  "source_excerpts": [
+    {
+      "workspace_filename": "Lab 14 - Portfolio Baselines.md",
+      "workspace_file_sha256": "e81a569b33cbb386d709a47aacdb368045331e7f90bb147b4acdf52d323cb7b3",
+      "excerpt_file": "lab-14-source-excerpt.md",
+      "excerpt_sha256": "7546379adb30a23100a4e85583dae0858c2b24501315ab5f5f8277aacd438794"
+    },
+    {
+      "workspace_filename": "Lab 15 - Portfolio Stability Decision.md",
+      "workspace_file_sha256": "2c1081fb2845a05daa748aeae8f153237c19c5180843573654b7e91b7d2ba694",
+      "excerpt_file": "lab-15-source-excerpt.md",
+      "excerpt_sha256": "f5515310e110ace768ae8d5583f828d050f473ce16c1a7070b48cd69b4c2d831"
+    }
+  ],
+  "original_downloader_sha256": "7738e0f3725444153eae69e8b03d2d9238e041a9235d2101ad88a34757b53a7d",
+  "workspace_lab_csv_sha256": "9661783725c926dc37289da878807d4e3201e06f9735d7dcb82a90a9a1af5c99",
+  "project_csv_sha256": "b8b78ad16aaef542fbcd266e65b2ff7502ff76a7a9fb1747869d31de9f8cc260",
+  "parsed_csv_rows_identical": true,
+  "newline_normalized_csv_bytes_identical": true,
+  "lab_row_count": 60,
+  "project_row_count": 60
+}

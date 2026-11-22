@@ -1,0 +1,177 @@
+{
+  "saved_price_sha256": "b8b78ad16aaef542fbcd266e65b2ff7502ff76a7a9fb1747869d31de9f8cc260",
+  "scope": "Later current retrieval; not proof of the reported October 22 vintage.",
+  "all_raw_hashes_verified": true,
+  "all_months_matched": true,
+  "per_ticker": {
+    "SGOV": {
+      "observations": 60,
+      "matching_at_saved_six_decimals": 0,
+      "maximum_absolute_price_difference_usd": 0.328849360351569,
+      "maximum_relative_price_difference_percent": 0.32765713983493583,
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SGOV?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "raw_sha256": "07d2b232a709b9fb5a83e844b638da91f7d1f80ee194d323c42170b3cef979fb",
+      "retrieved_utc": "2026-11-22T23:38:55.133272+00:00",
+      "annual_return_change_percentage_points": 9.869673738699403e-06,
+      "annual_volatility_change_percentage_points": -8.981118203819916e-06
+    },
+    "SCHR": {
+      "observations": 60,
+      "matching_at_saved_six_decimals": 0,
+      "maximum_absolute_price_difference_usd": 0.09015614135742211,
+      "maximum_relative_price_difference_percent": 0.36442422398102037,
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SCHR?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "raw_sha256": "7714452642a56375f28cc8283a6d5606cf1692969af34e97925ad4950095fd96",
+      "retrieved_utc": "2026-11-22T23:38:55.410394+00:00",
+      "annual_return_change_percentage_points": -3.274743775628919e-07,
+      "annual_volatility_change_percentage_points": 1.025607959947994e-05
+    },
+    "USIG": {
+      "observations": 60,
+      "matching_at_saved_six_decimals": 0,
+      "maximum_absolute_price_difference_usd": 0.21390485961914152,
+      "maximum_relative_price_difference_percent": 0.421857197776564,
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/USIG?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "raw_sha256": "5b4334f886d9a566301aa0a12477951ef9af96eea194ab074d7c1dfecd13f13c",
+      "retrieved_utc": "2026-11-22T23:38:55.640895+00:00",
+      "annual_return_change_percentage_points": -1.8021859417229232e-06,
+      "annual_volatility_change_percentage_points": -6.779831843162221e-06
+    },
+    "ACWI": {
+      "observations": 60,
+      "matching_at_saved_six_decimals": 34,
+      "maximum_absolute_price_difference_usd": 2.304687500043201e-05,
+      "maximum_relative_price_difference_percent": 2.5420824077757467e-05,
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ACWI?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "raw_sha256": "f8d78d5b849499f135f8834752424215333002f0dd78fd504561eadde2c01e9c",
+      "retrieved_utc": "2026-11-22T23:38:55.893375+00:00",
+      "annual_return_change_percentage_points": 1.8758837691534858e-06,
+      "annual_volatility_change_percentage_points": 2.768693413424117e-06
+    }
+  },
+  "saved_base": {
+    "weights": {
+      "SGOV": 0.7000000000000001,
+      "SCHR": 0.0,
+      "USIG": 0.0,
+      "ACWI": 0.30000000000000004
+    },
+    "gross_return": 0.06019889431572602,
+    "annual_cost": 0,
+    "net_return": 0.06019889431572602,
+    "volatility": 0.04555753602380293,
+    "sgov_weight": 0.7000000000000001,
+    "checks": {
+      "Weights sum to 100%": true,
+      "Long-only": true,
+      "SGOV reserve >= 10%": true,
+      "Estimated net return >= 6.0%": true
+    },
+    "passes": true
+  },
+  "later_capture_base": {
+    "weights": {
+      "SGOV": 0.7000000000000001,
+      "SCHR": 0.0,
+      "USIG": 0.0,
+      "ACWI": 0.30000000000000004
+    },
+    "gross_return": 0.060198969031093494,
+    "annual_cost": 0,
+    "net_return": 0.060198969031093494,
+    "volatility": 0.04555769946691007,
+    "sgov_weight": 0.7000000000000001,
+    "checks": {
+      "Weights sum to 100%": true,
+      "Long-only": true,
+      "SGOV reserve >= 10%": true,
+      "Estimated net return >= 6.0%": true
+    },
+    "passes": true
+  },
+  "saved_baselines": {
+    "Equal weight": {
+      "weights": {
+        "SGOV": 0.25,
+        "SCHR": 0.25,
+        "USIG": 0.25,
+        "ACWI": 0.25
+      },
+      "gross_return": 0.037292080188955704,
+      "annual_cost": 0,
+      "net_return": 0.037292080188955704,
+      "volatility": 0.06542235503922648,
+      "sgov_weight": 0.25,
+      "checks": {
+        "Weights sum to 100%": true,
+        "Long-only": true,
+        "SGOV reserve >= 10%": true,
+        "Estimated net return >= 6.0%": false
+      },
+      "passes": false
+    },
+    "60/40 ACWI/USIG benchmark": {
+      "weights": {
+        "SGOV": 0.0,
+        "SCHR": 0.0,
+        "USIG": 0.4,
+        "ACWI": 0.6
+      },
+      "gross_return": 0.06765242231979074,
+      "annual_cost": 0,
+      "net_return": 0.06765242231979074,
+      "volatility": 0.11588757920945292,
+      "sgov_weight": 0.0,
+      "checks": {
+        "Weights sum to 100%": true,
+        "Long-only": true,
+        "SGOV reserve >= 10%": false,
+        "Estimated net return >= 6.0%": true
+      },
+      "passes": false
+    }
+  },
+  "later_capture_baselines": {
+    "Equal weight": {
+      "weights": {
+        "SGOV": 0.25,
+        "SCHR": 0.25,
+        "USIG": 0.25,
+        "ACWI": 0.25
+      },
+      "gross_return": 0.03729210422869868,
+      "annual_cost": 0,
+      "net_return": 0.03729210422869868,
+      "volatility": 0.0654224522601547,
+      "sgov_weight": 0.25,
+      "checks": {
+        "Weights sum to 100%": true,
+        "Long-only": true,
+        "SGOV reserve >= 10%": true,
+        "Estimated net return >= 6.0%": false
+      },
+      "passes": false
+    },
+    "60/40 ACWI/USIG benchmark": {
+      "weights": {
+        "SGOV": 0.0,
+        "SCHR": 0.0,
+        "USIG": 0.4,
+        "ACWI": 0.6
+      },
+      "gross_return": 0.06765242636634959,
+      "annual_cost": 0,
+      "net_return": 0.06765242636634959,
+      "volatility": 0.1158875603107563,
+      "sgov_weight": 0.0,
+      "checks": {
+        "Weights sum to 100%": true,
+        "Long-only": true,
+        "SGOV reserve >= 10%": false,
+        "Estimated net return >= 6.0%": true
+      },
+      "passes": false
+    }
+  },
+  "interpretation": "Differences are observed, not attributed to a specific vendor revision. This comparison corroborates current-source proximity only; it does not authenticate the original retrieval date or grant redistribution rights."
+}

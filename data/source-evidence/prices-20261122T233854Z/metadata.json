@@ -1,0 +1,29 @@
+{
+  "scope": "Later current retrieval; not proof of the reported October 22 vintage.",
+  "responses": {
+    "SGOV": {
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SGOV?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "file": "SGOV.json",
+      "sha256": "07d2b232a709b9fb5a83e844b638da91f7d1f80ee194d323c42170b3cef979fb",
+      "retrieved_utc": "2026-11-22T23:38:55.133272+00:00"
+    },
+    "SCHR": {
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SCHR?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "file": "SCHR.json",
+      "sha256": "7714452642a56375f28cc8283a6d5606cf1692969af34e97925ad4950095fd96",
+      "retrieved_utc": "2026-11-22T23:38:55.410394+00:00"
+    },
+    "USIG": {
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/USIG?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "file": "USIG.json",
+      "sha256": "5b4334f886d9a566301aa0a12477951ef9af96eea194ab074d7c1dfecd13f13c",
+      "retrieved_utc": "2026-11-22T23:38:55.640895+00:00"
+    },
+    "ACWI": {
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ACWI?period1=1633046400&period2=1790812800&interval=1mo&events=history",
+      "file": "ACWI.json",
+      "sha256": "f8d78d5b849499f135f8834752424215333002f0dd78fd504561eadde2c01e9c",
+      "retrieved_utc": "2026-11-22T23:38:55.893375+00:00"
+    }
+  }
+}

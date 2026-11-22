@@ -1,4 +1,4 @@
-# Project 2 requirement audit — updated 2026-11-20
+# Project 2 requirement audit — updated 2026-11-22
 
 This is a readiness audit, not a grade guarantee. Deadline reported by the student: November 23 at 11:59 p.m.; Brightspace is authoritative.
 
@@ -15,13 +15,13 @@ The full Brightspace rubric was subsequently supplied by the student as text and
 
 | Requirement | Evidence and audit finding | Readiness |
 |---|---|---|
-| Python web app a stranger can run | Streamlit; partner reports clean cold run in Lab 20; README setup begins inside repository; 14 calculation/source tests and three app-state tests pass | Present; rerun final interface before recording |
+| Python web app a stranger can run | Streamlit; partner reports clean cold run in Lab 20; README setup begins inside repository; 17 calculation/source tests pass; earlier three app-state tests and student before/after/restored screenshots provide interface evidence | Present; final fresh setup/access checks pending |
 | Objective / universe / benchmark / risk / limits | Formal mandate and app; 6% net hurdle; SGOV/SCHR/USIG/ACWI; 60/40 ACWI/USIG comparison; historical volatility; long-only/full investment/SGOV floor | Present |
 | Equal weight and second baseline beside constrained portfolio | Shared calculations and failed-rule labels; saved output reproduces | Present |
 | Point-in-time signal and data card | Current ALFRED page captured 2026-11-20 at 06:08 UTC, November 18 observation 5.07%; raw HTML/metadata/hash bundled and checked | Present for current review at or after capture; old September claim remains unverified |
-| Stress estimates / window / costs / constraints and stop rule | Fixed suite and selected controls; STOP for infeasibility or >20-point change; REVIEW for cost/band/exactly-20-point triggers | Present; source-evidence hold visible |
-| Locked Changed-Input Record | Pre-run commit d49857a, cost 0% to 0.45%, before/after screenshots, divergence explanation, confirmed conditional-pilot judgment | Evidence present; AI-off compliance unresolved pending instructor ruling |
-| Recommendation with allocation range and monitoring triggers | Conditional pilot; base 70/30; base-feasible candidates 65–70% SGOV / 30–35% ACWI; cost45 result requires committee review | Present; adoption on hold for source evidence |
+| Stress estimates / window / costs / constraints and stop rule | Fixed suite and selected controls; STOP for infeasibility or >20-point change; REVIEW for cost/band/exactly-20-point triggers | Present; missing/corrupt signal evidence stops use |
+| Locked Changed-Input Record | Original cost record retained; new ACWI 0 to -3pp prediction at 054f0d3, nine before/after/restored screenshots, student-supplied comparison, diagnosis, and decision effect | Evidence present; AI-off compliance unresolved pending instructor interpretation |
+| Recommendation with allocation range and monitoring triggers | Conditional pilot; base 70/30; base-feasible candidates 65–70% SGOV / 30–35% ACWI; cost45 and ACWI -3pp selected results require committee review | Present; source limitations and committee approval remain conditions |
 | Opening AI/ownership and education statements | README and memo present; video guides contain statements | Videos not yet verified |
 
 ## Submission readiness
@@ -48,4 +48,6 @@ Use a small webcam view in recordings unless an approved accommodation applies. 
 4. Fill final video URLs, durations, timestamp indices, access confirmations, and frozen commit in the manifest.
 5. Confirm Brightspace's actual rubric and submission fields; submit the frozen package and save its receipt.
 
-The largest remaining risks are the AI-off instructor ruling, final videos/transcripts, and independent support for price-provider lineage. The current DGS10 snapshot now has verifiable raw evidence. A proposed three-month pilot horizon has been added for student/committee review; it is not an inferred client fact.
+November 22 source update: the original downloader and lab excerpts are bundled; lab/project CSV rows match exactly; all four later raw Yahoo responses and a reproducible comparison are preserved. Later-source differences leave base weights and baseline verdicts unchanged. Original October download timing and third-party redistribution rights remain unverified. See `price-data-lineage.md` for scope, rights references, and offline verification.
+
+The largest remaining risks are the AI-off instructor interpretation, final videos/transcripts, final package consistency/access, and the remaining original-vintage/rights limitations. DGS10 and current price-source captures have raw evidence. The student-approved three-month pilot is a classroom process evaluation, not an inferred client fact.
