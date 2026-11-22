@@ -4,6 +4,12 @@ Education only — not investment advice.
 
 # Validation and AI use
 
+## Additional ACWI changed-input evidence — 2026-11-22
+
+The student supplied a new ACWI annual-return-adjustment prediction (0.00 to -3.00 percentage points), followed by before/after screenshots, their own comparison, explanation, actual decision effect, and screenshots proving restoration to base. See the [unchanged pre-run prediction](changed-input-prediction-acwi.md) and [results, provenance, and nine evidence screenshots](changed-input-results-acwi.md). The prediction was committed and pushed at `054f0d3a82d62a772c13f495ccc084646d1df2af` before the changed-run screenshots were supplied. The selected result was 50% SGOV / 50% ACWI, 6.01% estimated net return, 7.50% volatility, PASS mandate verdict, and REVIEW numerical decision; restoration returned to 70% SGOV / 30% ACWI and PILOT.
+
+The student states the prediction and after-run wording are their own. Codex formatted and committed the prediction at the student's request, acknowledged evidence during the chat, and assembled the linked results report after restoration. This is evidence of student-supplied work and preserved execution, not a certification that the AI-off requirement was met. Instructor interpretation remains unresolved. The original cost prediction and historical evidence below remain unchanged.
+
 ## Scope and as-of boundaries
 
 | Item | Record |
