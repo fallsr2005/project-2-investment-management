@@ -13,8 +13,9 @@ This is a working checklist derived from the professor's Project 2 directions, o
 - [x] Align current README, mandate, memo, validation, source records, rubric map, manifest evidence paths, and video guides; separate historical findings from current conclusions.
 - [x] Record student approval of the three-month process pilot, monthly reviews, base-feasible range and governance triggers; committee authorization remains the ask.
 - [ ] Student: understand and review the final written claims, source limitations, numerical conventions, and recommendation before recording.
-- [ ] Record Video 1 ≤3:00; Video 2 ≤5:00; Video 3 ≤5:00. Each opens with both disclosures; Video 3 opens with the live app. Use a small webcam view unless accommodated.
-- [ ] Replace all three transcript placeholders with corrected transcripts of what was actually spoken; correct captions for substantive terms, tickers, numbers and attribution.
+- [x] Record/upload Video 1 and save its student-supplied corrected transcript. Student confirmed successful audio/visual/access/duration checks; exact displayed runtime remains to be entered in the final manifest.
+- [ ] Record Video 2 ≤5:00 and Video 3 ≤5:00. Each opens with both disclosures; Video 3 opens with the live app. Use a small webcam view unless accommodated.
+- [ ] Replace Video 2 and Video 3 transcript placeholders with corrected transcripts of what was actually spoken; correct captions for substantive terms, tickers, numbers and attribution. Video 1's transcript has been saved.
 - [ ] Fill manifest YouTube URLs, actual durations, timestamp indices, final access checks and frozen-commit fields. No required field may remain `PENDING` at submission.
 - [ ] Confirm the final app is ready for the recording/final machine and that README-only setup is usable. If another test/run is performed, record its actual result; do not relabel prior evidence as a new run.
 - [ ] Verify final instructor repository access and every YouTube link logged out; retain access through the appeal period.
