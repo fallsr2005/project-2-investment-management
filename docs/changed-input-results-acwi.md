@@ -4,7 +4,7 @@
 
 The pre-run prediction is preserved unchanged in [changed-input-prediction-acwi.md](changed-input-prediction-acwi.md), committed and pushed at [`054f0d3a82d62a772c13f495ccc084646d1df2af`](https://github.com/fallsr2005/project-2-investment-management/commit/054f0d3a82d62a772c13f495ccc084646d1df2af) before the student supplied the changed-run screenshots. The commit provides the pre-run timestamp; screenshot capture times are not independently authenticated here.
 
-The student states the prediction, comparison, explanation, and actual decision effect are their own wording. Codex formatted and committed the student-supplied prediction, acknowledged screenshots and section structure during the exchange, and later assembled this report and copied the original screenshot files. This report preserves the student's supplied after-run wording, including the requested change from “Matched exactly—dropping” to “Matched exactly because dropping.” Codex did not operate the changed-input run. Because AI chat remained part of the exchange, this record does not certify AI-off compliance; instructor interpretation remains unresolved. The earlier cost-test record remains preserved separately.
+The student states the prediction was independently written with AI off, and that the prediction, comparison, explanation, and actual decision effect are their own wording. Codex subsequently formatted and committed the student-supplied prediction, acknowledged screenshots and section structure during the exchange, and later assembled this report and copied the original screenshot files. This report preserves the student's supplied after-run wording, including the requested change from “Matched exactly—dropping” to “Matched exactly because dropping.” Codex did not operate the changed-input run or evaluate the prediction before execution. This records the student's authorship statement and the later assistance; the repository does not independently authenticate AI-off working conditions. The earlier cost-test record remains preserved separately; its reported exception is not attributed to this exercise.
 
 ## Evidence index
 
@@ -34,3 +34,9 @@ The screenshots show the other controls unchanged: all 59 monthly returns, 10% m
 
 - Numerical decision shifts from PILOT to REVIEW: Even though the 50% SGOV / 50% ACWI portfolio still passes the 6.0% return target (6.01%), it cannot be approved directly for a pilot under this scenario.
 - Committee escalation required: Because SGOV drops to 50.00% (outside the 65%–75% review band) and volatility jumps by nearly three percentage points to 7.50%, the 20.00-percentage-point reallocation requires formal committee escalation and reassessment before adopting the strategy.
+
+## Precision clarification added during later document review
+
+The student-authored sections above are unchanged. Their 6.015% hand calculation uses displayed inputs rounded to two decimals. Using the full-precision estimates already stored in the November 20 reproduced report gives approximately 6.01419% for 50/50 after the -3-point adjustment, which displays as 6.01%. Thus the parenthetical display value is explained by full precision, not by rounding an exact 6.015% down. This is an AI-assisted, after-run clarification from the saved estimates, not an edit to the locked prediction or a new experimental run.
+
+The two-mix hand comparison explains the hurdle crossing; the exhaustive covariance-based grid search, rather than expected returns alone, establishes the reported minimum-volatility feasible result. The higher volatility is a financial concern; the app's automatic REVIEW reasons are the SGOV band breach and exactly-20-point weight move, not a separate volatility threshold.

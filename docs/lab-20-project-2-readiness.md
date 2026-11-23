@@ -1,5 +1,7 @@
 # Lab 20 — Project 2 Readiness
 
+Current status: this file retains the student-reported partner work and earlier preflight history. The primary locked exercise is now the [ACWI record](validation-and-ai-use.md), with before/after/restoration evidence; the earlier cost exercise is supporting history. The current submission audit is [project-2-requirement-audit.md](project-2-requirement-audit.md). Historical partner DGS10 claims do not replace the later corrected data card.
+
 **Decision question:** Could a committee member who has never met me reach the Project 2 decision from this repository, and does that decision survive one changed input?
 
 ## Repository readiness
@@ -8,14 +10,14 @@
 |---|---|---|
 | Tool | `app.py` provides one interactive control set, mandate verdicts, two baselines, the constrained portfolio, and stress results | Locally verified |
 | One-command run instructions | `README.md` contains the Streamlit command | Locally verified |
-| Visible output | `visible_output.json` displays the mandate, inputs, base allocation, baselines, stress results, and DGS10 record without execution | Locally verified |
+| Visible output | `outputs/reproduced-results.json` is the November 20 corrected-source report; `visible_output.json` is the historical November 16 report | Preserved; timestamps identify each run |
 | Decision memo | `docs/decision-memo.md` agrees with the visible-output base result: 70% SGOV / 30% ACWI, 6.02% estimate, 4.56% volatility, and pilot recommendation | Locally checked |
-| Validation and AI use | `docs/validation-and-ai-use.md` records sources, tests, standard stress evidence, limitations, AI use, and the required Locked Changed-Input structure | Locked record pending |
+| Validation and AI use | `docs/validation-and-ai-use.md` indexes the primary ACWI prediction, student explanation, decision effect, nine screenshots and reset proof | Evidence assembled; student authorship and later assistance distinguished |
 | Videos and transcripts | Recording guides and transcript placeholders exist in `docs/` | Pending recording, caption review, and upload |
 
-## Cold run — partner entry required
+## Cold run — recorded partner report
 
-This must be completed by a partner from the published GitHub repository. Do not replace it with an assisted run or claim this is complete before the partner does it.
+The student reported the partner run below from the published repository. This is the preserved report, not a newly observed independent run of the final package.
 
 **Partner protocol:** send only the repository URL. The partner clones it into their own folder, follows only `README.md`, and then enters the following facts.
 
@@ -33,22 +35,22 @@ This must be completed by a partner from the published GitHub repository. Do not
 
 On 2026-11-17, a local app launch using the parent `FIN_43900/.venv` failed because Windows Application Control blocked Pandas/PyArrow's binary `_compute` component. The Project 2 app did not need Pandas, so `app.py` was changed to render its three result tables with Markdown rather than Pandas dataframes. The standalone app test then completed with zero app exceptions and zero displayed errors; all five portfolio-engine tests passed. The fix was committed and pushed as `8919427` (`Remove blocked Pandas dependency`).
 
-This is a local preflight check only. The partner must still perform and document an independent cold run from the GitHub repository.
+This is a historical local preflight check only. The separate partner report is recorded above; the local check does not replace it.
 
-## Changed input — AI-closed student entry required
+## Changed input — historical cost exercise
 
-The Project 2 validation file contains the required Locked Changed-Input Record. For Lab 20, first close AI tools and choose a new load-bearing input that has not been run with AI assistance. Before the run, write the old and new value with units, expected direction of the decision numbers, and anticipated decision effect. Commit and push that prediction. Run once, preserve before/after output, then finish the reconciliation.
+The following table preserves the earlier cost exercise and its disclosures. It is not an instruction to repeat or rewrite that prediction. The primary submission record is the later [student-authored ACWI prediction](changed-input-prediction-acwi.md) at commit 054f0d3, with the [results and nine before/after/restored screenshots](changed-input-results-acwi.md). The student states the ACWI prediction was independently written with AI off; later formatting/Git assistance is disclosed separately.
 
 | Lab 20 check | Location | Status |
 |---|---|---|
-| Prediction written before run | `docs/validation-and-ai-use.md` | Recorded; prior AI discussion and reported instructor exception disclosed; AI-off compliance remains for instructor determination. |
+| Prediction written before run | `docs/validation-history-2026-11-22.md` | Historical cost record; prior AI discussion and reported instructor exception retained. Not the primary ACWI exercise. |
 | Immutable pre-run commit and GitHub push | Git history | `d49857a2c5e4b70b2493a2a5d837896d79b0a4c7`, pushed before the user-supplied run screenshots. |
 | Before and after output saved | `docs/evidence/cost-45bp/` | Before and after screenshots preserved. |
-| Actual decision effect and explanation | `docs/validation-and-ai-use.md` | Student confirms keeping the pilot subject to committee review, with reassessment before implementing the changed allocation. App remains feasible; weights change by 10 points and volatility rises. The memo's cost and pilot-range triggers require reassessment. |
+| Actual decision effect and explanation | `docs/validation-history-2026-11-22.md` | Historical cost exercise: student confirmed retaining a pilot subject to committee review; weights changed by 10 points and volatility rose. Current ACWI decision effect is documented separately. |
 
-## Code explanation — partner entry required
+## Code explanation — recorded partner report
 
-Open `constrained_portfolio` and `mandate_verdict` in `portfolio_engine.py`. Explain how the 5-point compositions become long-only weights, how the four mandate checks screen each mix, and why the lowest-volatility feasible result is retained. The partner asks one question; record it and the answer after the conversation.
+The recorded exchange concerned `constrained_portfolio` and `mandate_verdict`: 5-point compositions become long-only weights, mandate checks screen each mix, and the lowest-volatility feasible result is retained. The student-reported question and answer follow; they are not a verbatim transcript.
 
 | Required fact | Student entry |
 |---|---|
@@ -65,7 +67,7 @@ Open `constrained_portfolio` and `mandate_verdict` in `portfolio_engine.py`. Exp
 
 ## Decision line
 
-**Pilot the process, not full adoption, while all mandated constraints remain feasible and no stress moves a base weight by more than 20 percentage points; reverse to pause/reject if feasibility fails, the DGS10 vintage is unusable, or the stability condition breaks.**
+**Conditional classroom process pilot only.** A mandate PASS is not committee authorization; the recorded ACWI -3pp result requires REVIEW. Pause for infeasibility, a selected/fixed-suite weight move greater than 20 points, or failed source verification. Selected exactly-20-point moves, cost above 25bp, and SGOV outside the original candidate review band require reassessment. The frozen DGS10 capture and open price-vintage/rights limitations restrict use as documented in the current memo.
 
 ## Before deadline
 

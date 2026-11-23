@@ -1,31 +1,18 @@
-AI used: ChatGPT/Codex helped develop code, tests, documentation, and this recording draft. I am responsible for reviewing the analysis and owning the final decision.
+AI used: ChatGPT/Codex assisted with code, tests, source checks, and documentation. I am responsible for reviewing the analysis and owning the decision.
 
 Education only — not investment advice.
 
 # Video 3 — committee presentation
 
-Recording draft, not an actual transcript. Target 4:00–4:40; hard limit 5:00. Open with the live app already on screen and speak the opening disclosures. Include a small webcam view unless accommodated.
+Preparation cues, not an actual transcript. Maximum **5:00**; aim for 4:00–4:40. **Open with the app already running live**, then speak both disclosures. Show a small webcam view unless accommodated. Speak to the committee in your own words.
 
-**Live app: base allocation and mandate.**
+| Approximate time | Show and explain |
+|---|---|
+| 0:00–0:40 | Live base app and disclosures. Ask for a conditional three-month classroom process pilot, monthly reviews, no trade authorization. Base 70% SGOV / 30% ACWI; 6.02% historical net estimate and 4.56% volatility are not forecasts or three-month promises. |
+| 0:40–1:25 | Mandate: four ETFs; minimum historical volatility, net estimate ≥6%, SGOV ≥10%, long-only/full investment, 5-point grid. Equal weight: 3.73% return / 6.54% volatility, fails return. Benchmark 60% ACWI / 40% USIG: 6.77% / 11.59%, fails reserve. |
+| 1:25–2:20 | Sensitivities: last-36 gives 90/10 SGOV/ACWI, a material 20-point shift; cost45 gives 60/40, 6.32% / 6.03%, REVIEW. Your recorded ACWI -3pp exercise gives 50/50, 6.01% / 7.50%, PASS feasibility but REVIEW governance. Explain why feasibility does not authorize implementation. |
+| 2:20–2:55 | Allocation range: original candidate review band 65–75% SGOV; base-feasible grid subset 65–70% SGOV paired with 30–35% ACWI. The 75/25 endpoint fails the base return hurdle. Recheck each candidate after costs and changed inputs. |
+| 2:55–3:40 | Source boundaries: prices are a frozen historical sample; later-source comparison retained the base mix but cannot authenticate the original October download. DGS10 is monitoring-only; frozen November 20 capture reports November 18 at 5.07%. It is not live/latest. Yahoo rights remain unverified, including public distribution; broader use needs a rights basis. |
+| 3:40–4:40 | Committee action and reversals: STOP for infeasibility or greater-than-20-point selected/fixed-suite changes; selected REVIEW for exactly 20 points, cost above 25bp, or SGOV outside the original band. The fixed window stress still needs human review even while base selected status is PILOT. Missing/corrupt signal evidence stops operational use; a later decision requires new admissible evidence. Taxes, turnover, spreads, drawdown, and personal liquidity needs are omitted. |
 
-I recommend a conditional three-month classroom pilot with monthly committee review. I am asking permission to evaluate the process, not to place trades. The base allocation is 70 percent SGOV and 30 percent ACWI. Estimated annual return is 6.02 percent with 4.56 percent annual volatility. These are historical estimates, not promised outcomes.
-
-The mandate minimizes estimated volatility while meeting a six-percent net-return hurdle, holding at least ten percent SGOV, remaining long-only, and totaling one hundred percent. The proposed review horizon is a governance assumption, while the annualized risk and return conventions describe the model.
-
-**Show both baselines.**
-
-Equal weight earns only a 3.73-percent historical estimate and fails the return hurdle. The 60-percent ACWI / 40-percent USIG benchmark reaches 6.77 percent but has no SGOV and fails the reserve floor. Both are transparent comparison portfolios, not automatic recommendations. The constrained base result meets the stated numerical rules with less estimated volatility than either comparator.
-
-**Show stress suite and recorded cost result.**
-
-The five-year labeled price sample supplies 59 monthly returns. Using only the last 36 changes the selected allocation to 90 percent SGOV and ten percent ACWI: a 20-point difference. That sensitivity is why I do not seek full adoption. Reducing the ACWI return estimate by one percentage point requires more equity to meet the hurdle. Costs also matter: the recorded 45-basis-point scenario selects 60 percent SGOV and 40 percent ACWI, estimates 6.32 percent net return and 6.03 percent volatility, and requires committee review.
-
-Within the original candidate review band, the base-feasible grid range is 65–70 percent SGOV paired with 30–35 percent ACWI. Every candidate must pass after costs. I would reassess before implementing the 60/40 cost result because it falls outside that range and exceeds the 25-basis-point cost review trigger.
-
-**Show the DGS10 card and current source evidence.**
-
-DGS10 monitors Treasury-rate conditions relevant to SCHR, not future portfolio returns. The saved source page reports November 18 at 5.07 percent, captured November 20 at 06:08 UTC. It supports this current review only. The earlier September claim remains unverified, and no historical timing result is inferred from this newer capture.
-
-**End with action and reversals.**
-
-Authorize a limited classroom pilot only after reviewing the evidence and assumptions. Pause for infeasibility, a greater-than-20-point allocation move, or failed source verification. Escalate exactly 20 points, costs above 25 basis points, or a candidate outside the original band. Taxes, turnover, drawdown, and actual investor cash needs are not modeled. Those limitations restrict the decision even when the app says PASS.
+Use the [decision memo](decision-memo.md) for consistent figures and the [source review](source-limitations-review.md) for unresolved boundaries. End with a conditional committee ask, not a claim that passing tests establish suitability or rights. After recording, provide the corrected actual transcript, captions, URL, duration, and timestamp index.

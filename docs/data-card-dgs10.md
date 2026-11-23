@@ -4,7 +4,7 @@ AI used: Codex assisted with source capture, verification code, and documentatio
 
 Education only — not investment advice.
 
-| Field | Current decision record |
+| Field | Frozen demonstration record |
 |---|---|
 | Source / ID | Federal Reserve Bank of St. Louis [ALFRED DGS10](https://alfred.stlouisfed.org/series?seid=DGS10); underlying source Board of Governors, H.15 |
 | Definition | Market yield on US Treasury securities at 10-year constant maturity, quoted on an investment basis |
@@ -22,7 +22,7 @@ Education only — not investment advice.
 
 ## Admission and stop rule
 
-Admit the observation only for this review at or after the capture boundary. `verify_signal_evidence()` checks the stored SHA-256 and the actual parsed date/value. Missing, altered, or inconsistent evidence stops the operational recommendation. A later committee review must fetch and preserve a new snapshot and inspect publication timing and any revision issue before use. The app does not automatically refresh or claim that this snapshot remains current indefinitely.
+Admit the observation only for the dated demonstration review at or after the capture boundary. `verify_signal_evidence()` checks the stored SHA-256 and the actual parsed date/value. Missing, altered, or inconsistent evidence stops the operational recommendation. A later committee decision must preserve a new admissible snapshot and inspect publication timing and any revision issue before use. The app does not automatically refresh, check freshness, compare revision histories, or establish that this snapshot is live/latest. A successful hash/date/value check is not a freshness certification.
 
 ## Earlier claim and correction
 

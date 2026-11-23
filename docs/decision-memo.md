@@ -1,57 +1,48 @@
-AI used: ChatGPT/Codex assisted with code structure, tests, and documentation; I reviewed the analysis and own the decision.
+AI used: ChatGPT/Codex assisted with code, tests, source checks, and documentation. I am responsible for reviewing the analysis and owning the decision.
 
 Education only — not investment advice.
 
-# Decision memo — Project 2 investment-management application
+# Decision memo — Project 2
 
 ## Recommendation and committee ask
 
-**Recommendation: conditional three-month classroom pilot centered on 70% SGOV and 30% ACWI, with monthly committee review.** Under the base estimates, the feasible grid candidates in the original review band are **65–70% SGOV and 30–35% ACWI**, paired to total 100%; SCHR and USIG are 0%. The previously stated 65–75% SGOV band was a candidate review band, not a guarantee of feasibility: its 75% SGOV / 25% ACWI endpoint estimates only 5.65% before costs and fails the 6.0% hurdle. Each allocation must be checked again after costs and input changes. The horizon is a proposed classroom governance choice, not an inferred client requirement or three-month return promise.
+**Authorize a conditional three-month classroom process pilot, centered on 70% SGOV / 30% ACWI, with monthly committee reviews.** This requests permission to evaluate the process, not place trades. The student confirmed the recommendation and horizon on November 20; committee authorization remains the ask.
 
-The committee should approve the pilot only if it accepts the saved-data limitations, the point-in-time DGS10 monitoring rule, and the stop conditions below. The requested action is approval to operate the app and review its outputs—not authorization to place trades.
+Within the original **65–75% SGOV candidate review band**, the **base-feasible grid subset is 65–70% SGOV paired with 30–35% ACWI**, totaling 100%; SCHR/USIG are zero. The 75/25 endpoint estimates only 5.65% before cost and fails the hurdle. Recheck every candidate after costs and changed estimates. A three-month pilot evaluates operation and decision consistency, not attainment of an annual return promise.
 
-Student decision confirmed November 20, 2026: approve this recommendation for a three-month classroom evaluation with monthly reviews, the stated candidate allocation range, and the review/stop conditions. This confirms the student's judgment; actual committee authorization remains the requested action. Three months can evaluate operation and decision consistency, but cannot establish attainment of the 6% annual return estimate or reliability across market cycles.
+## Mandate and evidence boundary
 
-## Mandate and as-of boundary
+Minimize estimated annual sample volatility, subject to estimated net annual return ≥6%, SGOV ≥10%, long-only weights totaling 100%, and a 5-point grid across SGOV/SCHR/USIG/ACWI. The benchmark is 60% ACWI / 40% USIG. The hurdle and reserve floor are classroom assumptions, not validated client requirements.
 
-The application searches long-only allocations among SGOV, SCHR, USIG, and ACWI in 5-percentage-point steps. It minimizes annualized historical volatility subject to weights totaling 100%, SGOV at least 10%, and estimated net annual return at least 6.0%. The 60/40 ACWI/USIG allocation is the benchmark; annualized sample volatility is the risk measure.
+Sixty adjusted prices, October 2021–September 2026, yield 59 simple monthly returns. First-of-month labels represent completed months. Annual mean is monthly arithmetic mean ×12; volatility is monthly sample standard deviation ×√12. All estimates are historical.
 
-The base price window is 60 monthly adjusted-close observations, October 2021–September 2026, reported downloaded from Yahoo Finance on 2026-10-22 in the prior lab notes. This creates 59 monthly simple returns. The date labels identify the first of the represented month, not the trade or availability date; September's close represents the completed September month. All estimates are historical. The current DGS10 observation is November 18 at 5.07%, from a raw ALFRED page captured November 20 at 06:08 UTC. Its hash and date/value are checked by the app; it is information available for this current review, not proof of an old vintage. The earlier September claim is retained only in historical records and remains unverified.
+Lab records report an October 22 Yahoo download; the original raw response/timestamp is unavailable. A separate November 22 raw-source comparison retains the same base weights and baseline verdicts. Original-vintage authentication and Yahoo access/redistribution rights, including public repository distribution, remain unverified. See the [source-limitation review](source-limitations-review.md).
 
-A separate November 22 capture of all four Yahoo series now corroborates the saved price history: later adjusted-price levels differ, but the base allocation and both baseline verdicts remain unchanged. Raw responses, timestamps, hashes, and an offline comparison are linked in the [price lineage](price-data-lineage.md). This does not establish the original October retrieval date or third-party redistribution rights; these remain conditions for use beyond this classroom review.
+DGS10 is monitoring-only: the frozen November 20 capture reports November 18 at 5.07%. It is not a live/latest reading or proof of the old September vintage. Refresh and preserve admissible evidence before a later committee decision.
 
-## Base result and required comparisons
+## Base comparison — zero implementation cost
 
-| Portfolio | SGOV / SCHR / USIG / ACWI | Estimated net return | Estimated volatility | Mandate verdict |
+| Portfolio | SGOV / SCHR / USIG / ACWI | Net estimate | Volatility | Mandate |
 |---|---:|---:|---:|---|
-| Constrained minimum-volatility portfolio | 70 / 0 / 0 / 30 | 6.02% | 4.56% | Pass |
-| Equal weight | 25 / 25 / 25 / 25 | 3.73% | 6.54% | Fail: estimated net return below 6.0% |
-| 60/40 ACWI/USIG benchmark | 0 / 0 / 40 / 60 | 6.77% | 11.59% | Fail: SGOV reserve below 10% |
+| Constrained grid minimum | 70 / 0 / 0 / 30 | 6.02% | 4.56% | PASS |
+| Equal weight | 25 / 25 / 25 / 25 | 3.73% | 6.54% | FAIL: return |
+| 60/40 ACWI/USIG benchmark | 0 / 0 / 40 / 60 | 6.77% | 11.59% | FAIL: reserve |
 
-The base allocation is the lowest-volatility feasible allocation among the discrete combinations tested. It does not prove that the allocation is continuously optimal or that the 6.0% return will occur.
+## Sensitivity and decision effect
 
-## Stress evidence and decision interpretation
+| Change | SGOV / ACWI | Net estimate / volatility | Implication |
+|---|---:|---:|---|
+| ACWI return -1 percentage point | 65 / 35 | 6.04% / 5.29% | More equity needed for the hurdle |
+| Last 36 returns | 90 / 10 | 6.05% / 1.19% | 20-point sensitivity warrants reassessment |
+| Cost 25bp/year | 65 / 35 | 6.14% / 5.29% | Costs change the feasible boundary |
+| SGOV floor 20% | 70 / 30 | 6.02% / 4.56% | Base already exceeds this floor |
+| Recorded cost 45bp/year | 60 / 40 | 6.32% / 6.03% | REVIEW: cost and candidate-band breaches |
+| Student ACWI return -3 points | 50 / 50 | 6.01% / 7.50% | PASS feasibility; REVIEW governance |
 
-| Stress | Result | Interpretation |
-|---|---|---|
-| Reduce ACWI return estimate by 1 percentage point | 65% SGOV / 35% ACWI; 6.04% net; 5.29% volatility | A lower equity estimate needs more equity to clear the same hurdle; allocation shifts 5 points. |
-| Use last 36 monthly returns | 90% SGOV / 10% ACWI; 6.05% net; 1.19% volatility | The largest 20-point shift is material. It supports a pilot rather than full adoption. |
-| Apply 25-basis-point annual cost | 65% SGOV / 35% ACWI; 6.14% net; 5.29% volatility | Costs can move the feasible boundary; actual implementation costs require a fresh run. |
-| Raise SGOV minimum to 20% | Base 70% SGOV / 30% ACWI remains feasible | The current result exceeds the stated reserve floor. |
-| Recorded 45-basis-point annual cost | 60% SGOV / 40% ACWI; 6.32% net; 6.03% volatility | 10-point shift; student retains pilot subject to committee review before implementing this allocation. It breaches the cost and candidate-band review triggers. |
+The student's [locked ACWI record](validation-and-ai-use.md) anticipated the weight/risk range, but the app's explicit REVIEW was stronger than the predicted cautious pilot. The student requires committee reassessment before using this allocation. Restoration returned the app to base.
 
-The app's numerical status is STOP if no allocation is feasible or a selected/standard scenario moves a weight by more than 20 percentage points from base. It requests REVIEW for exactly 20 points, cost above 25 basis points, or SGOV outside the original candidate band. Missing or inconsistent DGS10 evidence separately stops operational use. The fixed standard stress suite does not change with sidebar controls; the top table shows the selected scenario.
+## Monitoring and reversal
 
-## Monitoring and reversal triggers
+Pause for infeasibility or a selected/fixed-suite weight move **greater than 20 points**. Review a selected move of **exactly 20**, annual cost **above 25bp**, or SGOV outside the original candidate band. The fixed window stress remains a material human-review limitation; it does not automatically change the base selected status from PILOT. Mandate PASS is never committee authorization.
 
-- Re-run and pause the pilot if an approved scenario has no feasible allocation or changes any base weight by more than 20 percentage points.
-- Escalate the current 20-point historical-window difference before any move beyond the 65–75% SGOV pilot range.
-- Reassess if DGS10 cannot be evaluated from an ALFRED vintage available at the decision date, has material revisions, or is stale beyond its expected publication lag.
-- Re-run if estimated implementation costs exceed 25 basis points annually, the 6.0% hurdle changes, or the SGOV floor changes.
-- Do not infer safety from low historical SGOV volatility; the reserve fund can fluctuate and is not cash.
-
-## Limitations
-
-This simplified model omits taxes, turnover, drawdown, bid-ask spreads, personal liquidity needs, rebalancing mechanics, and a continuous optimizer. Yahoo adjusted-close data may be revised. DGS10 is a monitoring signal, not a forecast. The app's arithmetic and tests establish reproducibility, not the correctness of forward-looking estimates.
-
-Complete AI-use details, tests, and the required Locked Changed-Input Record are in [validation-and-ai-use.md](validation-and-ai-use.md).
+Stop operational use if signal evidence verification fails. Reassess mandate changes and later signal freshness/revisions before use. Historical estimation risk, grid discreteness, unverified rights/vintage, and omitted taxes, turnover, spreads, drawdown, and personal liquidity needs restrict the recommendation. See [validation and AI use](validation-and-ai-use.md).
