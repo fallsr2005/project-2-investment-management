@@ -6,6 +6,8 @@ The saved `data/prices.csv` was supplied in the completed Lab 14/15 work. Those 
 
 The [workspace comparison](../data/source-evidence/lab-price-lineage/workspace-comparison.json) records source-file hashes and verifies that the lab CSV and project CSV have identical parsed rows and identical bytes after newline normalization. Their different original byte hashes are explained by line endings. No original October vendor JSON response was found, so the reported download date remains supported by the lab records only.
 
+Git provides an additional preservation record: [initial commit bea2f9e](https://github.com/fallsr2005/project-2-investment-management/commit/bea2f9e98293df21726640d860fe600bb7fa517d), dated November 17, 2026 at 14:44:38 Eastern, contains the same `data/prices.csv` Git blob as the current file (`9c242e1190d480fca690236fa1b083c2d7e803f7`). This establishes the repository's recorded preservation point, not vendor authentication or proof of the earlier October download.
+
 | Input | Source link | Meaning |
 |---|---|---|
 | SGOV | https://finance.yahoo.com/quote/SGOV/history/ | Monthly adjusted close of Treasury-bill ETF |

@@ -26,6 +26,8 @@ Admit the observation only for the dated demonstration review at or after the ca
 
 ## Earlier claim and correction
 
+The reviewed Lab 17 record also reports a manual source check on October 29: October 23 = 5.00%, October 26 = 5.00%, and October 27 = 4.99%. These are preserved lab-reported checks, not independently authenticated raw responses or checks of the November observation. They support the documented checking process without replacing the dated capture above. Lab 16's fictional training table illustrates publication-date/vintage filtering; its values are not Project 2 market inputs.
+
 Lab 17 prose reported 2026-09-29 at 5.26% as known on September 30, but its original vintage response was not preserved here. Attempts to retrieve that historical CSV failed. The original Lab 20 screenshots remain historical evidence, but their displayed DGS10 claim is not independently validated. The current Project 2 app uses the newly captured observation above instead. This is a dated source correction, not proof of the September vintage, and does not change the portfolio arithmetic because DGS10 is monitoring-only.
 
 ## Rights and privacy

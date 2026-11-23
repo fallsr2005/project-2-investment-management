@@ -15,12 +15,14 @@ The [historical validation record](validation-history-2026-11-22.md) preserves t
 | Input | Evidence and boundary |
 |---|---|
 | ETF prices | `data/prices.csv`: SGOV, SCHR, USIG, ACWI; 60 completed monthly adjusted-price observations, October 2021–September 2026; 59 adjacent returns. First-of-month labels identify the month, not availability on that day. |
-| Original retrieval | Lab 14/15 prose reports October 22, 2026. Bundled downloader and lab excerpts support the lineage description; no original October raw response or authenticated retrieval timestamp was found. |
+| Original retrieval | Lab 14/15 prose reports October 22, 2026. Bundled downloader/excerpts and the unchanged CSV in initial commit bea2f9e (November 17) support the lineage and preservation record; no original October raw response or authenticated retrieval timestamp was found. |
 | Later price check | Four raw Yahoo chart responses captured November 22 at 23:38 UTC; exact months, ticker identities, source URLs, retrieval times, hashes, six-decimal reconstruction, and numerical comparison are preserved in the [price lineage](price-data-lineage.md). This verifies the later comparison, not the October vintage. |
 | DGS10 | November 18 observation, 5.07%, in the ALFRED page captured November 20 at 06:08:22 UTC. The [data card](data-card-dgs10.md) defines admissibility and source verification. This is a frozen demonstration snapshot, not a live/latest value or proof of the earlier September claim. |
 | Rights and privacy | DGS10 is tagged public domain with citation requested. Yahoo access/redistribution permission is not independently established, including for the existing public repository. No account data, credentials, or personal portfolios are needed. See the [source-limitation review](source-limitations-review.md). |
 
 Adjusted-price returns are simple adjacent ratios minus one. Annual arithmetic mean is monthly mean × 12; annual sample volatility is monthly sample standard deviation × √12; covariance and correlations use the same aligned returns. The last-36-return option uses 37 prices. Implementation cost is an additional annual assumption subtracted from gross estimated return, not a second fund-expense deduction. Historical estimates do not establish future returns or investor suitability.
+
+Labs 14–19 were inspected for supporting evidence. Labs 14–15 document the fund/source choices, arithmetic conventions, base/window results and earlier sensitivity reasoning. Lab 16 supplies the publication/vintage-filtering method; Lab 17 records three manual DGS10 checks, retained as lab-reported history in the data card. The labs supply no additional original October response or Yahoo permission evidence. The separate SEC company-screening exercises in Labs 18–19 do not establish ETF price provenance.
 
 ## Existing verification evidence
 

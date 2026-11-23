@@ -1,6 +1,6 @@
 # Final Project 2 submission checklist
 
-Current written materials are aligned; actual recordings and final submission are incomplete. Open source gaps are distinguished from completed documentary review.
+This is a working checklist derived from the professor's Project 2 directions, official student checklist, and supplied Brightspace rubric; it is not an instructor-issued document. Current written materials are aligned; actual recordings and final submission are incomplete. Open source gaps are distinguished from completed documentary review.
 
 - [x] Build app, shared engine, mandate, two baselines with verdicts, stress controls and governance rules.
 - [x] Preserve the last executed 17-test/export verification evidence and partner-reported cold-run record.
@@ -12,7 +12,6 @@ Current written materials are aligned; actual recordings and final submission ar
 - [x] Complete the source-limitation review: original October retrieval and Yahoo access/redistribution rights remain unverified; the review does not resolve them.
 - [x] Align current README, mandate, memo, validation, source records, rubric map, manifest evidence paths, and video guides; separate historical findings from current conclusions.
 - [x] Record student approval of the three-month process pilot, monthly reviews, base-feasible range and governance triggers; committee authorization remains the ask.
-- [ ] Establish an appropriate Yahoo access/redistribution rights basis, including existing public distribution, or use a suitably licensed replacement with separately documented updated outputs. This remains an open source limitation.
 - [ ] Student: understand and review the final written claims, source limitations, numerical conventions, and recommendation before recording.
 - [ ] Record Video 1 ≤3:00; Video 2 ≤5:00; Video 3 ≤5:00. Each opens with both disclosures; Video 3 opens with the live app. Use a small webcam view unless accommodated.
 - [ ] Replace all three transcript placeholders with corrected transcripts of what was actually spoken; correct captions for substantive terms, tickers, numbers and attribution.
@@ -22,4 +21,6 @@ Current written materials are aligned; actual recordings and final submission ar
 - [ ] Freeze the final commit after recordings/transcripts and all material edits are complete; ensure displayed results, memo, transcripts and manifest agree.
 - [ ] Submit repository/video links, manifest, transcripts and the same `docs/decision-memo.md` / `docs/validation-and-ai-use.md` files in Brightspace as required; save the receipt.
 
-The grade is determined by the instructor. Do not rewrite the locked prediction, replace original execution evidence, mark recordings complete based on guides, or treat disclosure as proof that an unresolved source gap is cured.
+Licensing remains a data-integrity rubric consideration and the documented permission limitation remains open. A separate Yahoo permission letter, an independently timestamped October receipt, and a replacement dataset are not listed as standalone Project 2 deliverables; this checklist does not add them as submission requirements. Disclosure does not establish permission or guarantee full credit.
+
+The grade is determined by the instructor. Do not rewrite the locked prediction, replace original execution evidence, or mark recordings complete based on guides.
