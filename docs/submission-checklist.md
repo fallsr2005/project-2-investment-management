@@ -13,7 +13,8 @@ This is a working checklist derived from the professor's Project 2 directions, o
 - [x] Align current README, mandate, memo, validation, source records, rubric map, manifest evidence paths, and video guides; separate historical findings from current conclusions.
 - [x] Record student approval of the three-month process pilot, monthly reviews, base-feasible range and governance triggers; committee authorization remains the ask.
 - [ ] Student: understand and review the final written claims, source limitations, numerical conventions, and recommendation before recording.
-- [x] Record/upload Video 1 and save its student-supplied corrected transcript. Student confirmed successful audio/visual/access/duration checks; exact displayed runtime remains to be entered in the final manifest.
+- [x] Record/upload Video 1 and save its student-supplied corrected transcript. Student confirmed successful audio/visual/access checks and reported a YouTube runtime of 2:42; runtime recorded in manifest.
+- [ ] Reconcile Video 1's supplied final caption endpoint (2:44.080) with its reported YouTube runtime (2:42); confirm caption timing matches the final uploaded cut without changing spoken wording.
 - [ ] Record Video 2 ≤5:00 and Video 3 ≤5:00. Each opens with both disclosures; Video 3 opens with the live app. Use a small webcam view unless accommodated.
 - [ ] Replace Video 2 and Video 3 transcript placeholders with corrected transcripts of what was actually spoken; correct captions for substantive terms, tickers, numbers and attribution. Video 1's transcript has been saved.
 - [ ] Fill manifest YouTube URLs, actual durations, timestamp indices, final access checks and frozen-commit fields. No required field may remain `PENDING` at submission.

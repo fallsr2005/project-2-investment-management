@@ -33,7 +33,7 @@ Completed and documented in [source-limitations-review.md](source-limitations-re
 |---|---|
 | Current written materials | Consistency review complete across README, mandate, memo, validation, source record, rubric map and guides. Student should understand/review the final wording before presenting. |
 | Historical material | Earlier validation preserved separately; original output and locked prediction unchanged. |
-| Video 1 | YouTube link and caption-derived timestamp index recorded; transcript saved from student-supplied corrected captions. Student confirmed successful audio/visual/access/duration checks. Exact displayed runtime still needs entry in the final manifest; final package freeze pending. |
+| Video 1 | YouTube link and caption-derived timestamp index recorded; transcript saved from student-supplied corrected captions. Student confirmed audio/visual/access checks and reported 2:42 runtime. Supplied final caption ends 2:44.080; reconcile caption timing with the final upload before freeze. |
 | Video 2 | Missing: actual ≤5:00 code walkthrough, URL, corrected transcript/captions and timestamp index. |
 | Video 3 | Missing: actual ≤5:00 committee presentation opening with live app and disclosures, URL, corrected transcript/captions and timestamp index. |
 | Manifest/access/freeze | Evidence paths updated; video fields, actual durations/timestamps, final access confirmations and frozen commit pending. |
