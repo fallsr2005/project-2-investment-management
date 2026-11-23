@@ -1,1 +1,68 @@
-PENDING: After recording Video 1, replace this file with the corrected transcript of what was actually spoken. Confirm finance terms, tickers, numerical values, and timestamps before submitting.
+[00:00:00.720 --> 00:00:05.600]
+I use Chat GPT and Codex to help with code, tests, source checks and this presentation
+
+[00:00:05.600 --> 00:00:11.040]
+draft. I am responsible for the analysis and decision. This is education only not investment
+
+[00:00:11.040 --> 00:00:17.280]
+advice. My project developed from the lab's baseline calculations into an app that compares
+
+[00:00:17.280 --> 00:00:22.000]
+two baselines with a constrained portfolio. Initially I focused on whether the portfolio
+
+[00:00:22.000 --> 00:00:27.280]
+passed. Now I separate numerical feasibility from whether the committee should use it. That change
+
+[00:00:27.280 --> 00:00:34.720]
+came from coursework, AI-assisted review, and my own stress exercise. This earlier AI assisted memo
+
+[00:00:34.720 --> 00:00:42.960]
+suggested a 65 to 75% SGOV operating range. I qualified that suggestion by checking the 75%
+
+[00:00:42.960 --> 00:00:55.920]
+endpoint. With the apps rounded return inputs, 75%* 3.78 plus 25%* 11.25 equals about 5.65%.
+
+[00:00:56.560 --> 00:01:03.840]
+That misses the 6% hurdle. So the corrected memo separates this candidate review band
+
+[00:01:03.840 --> 00:01:08.160]
+from the feasible range. Under the base assumptions, the feasible grid
+
+[00:01:08.160 --> 00:01:16.880]
+candidates with the band are 65 to 70% SGOV paired with 30 to 35% ACWI. Every
+
+[00:01:16.880 --> 00:01:22.240]
+candidate still needs checking after costs or input changes. For my recorded experiment,
+
+[00:01:22.240 --> 00:01:27.760]
+I reduced ACWI's annual return estimate by three percentage points. I wrote the prediction myself;
+
+[00:01:27.760 --> 00:01:33.600]
+the later formatting and Git assistance are disclosed. The actual allocation became 50%
+
+[00:01:33.600 --> 00:01:43.680]
+SGOV and 50% ACWI. Estimated net return was 6.01% and then the portfolio and then the volatility
+
+[00:01:43.680 --> 00:01:54.160]
+rose to 7.5%. But then the overall the portfolio passed the mandate but it's 20 point weight change
+
+[00:01:54.160 --> 00:02:01.600]
+allocation band breach triggered REVIEW. So, this changed my judgment: passing the return
+
+[00:02:01.600 --> 00:02:07.200]
+hurdle is not enough. I retained a conditional three-month process pilot with monthly reviews,
+
+[00:02:07.200 --> 00:02:12.880]
+and I require a committee reassessment before the stress allocation. The saved restoration advice.
+
+[00:02:12.880 --> 00:02:19.280]
+return to the base 70/30 mix. Uh the historical estimates and frozen source snapshots limit what
+
+[00:02:19.280 --> 00:02:28.160]
+this process can establish. And just to show if needed, 3%, the same information, and then
+
+[00:02:28.160 --> 00:02:38.400]
+down here it shows the review and 20% change. And then I'll change it back.
+
+[00:02:38.400 --> 00:02:44.080]
+And it goes back to PILOT and then the 70/30.
