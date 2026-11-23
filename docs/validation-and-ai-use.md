@@ -70,6 +70,7 @@ The older cost exercise and its prior AI discussion remain in the historical val
 | November 19–20 | Codex; historical log reports exposed model `gpt-6.1-sol` | Audited requirements and corrected unconditional pilot messaging, stop/review boundaries, candidate-range wording, and DGS10 provenance. Historical test/cleanup limitations are retained in the archive. |
 | November 22: student exercise | ChatGPT/Codex; exact model/version not exposed in this session | Mechanical formatting and Git assistance after student-supplied prediction; later assembly of student-supplied interpretation and screenshots. No prediction evaluation or changed-input execution was performed in that exchange. |
 | November 22: source/package audit | ChatGPT/Codex; exact model/version not exposed in this session | Captured later vendor evidence, wrote the lineage audit and three failure/evidence tests, fixed byte preservation, and aligned documentation and recording guides. This review used existing artifacts rather than rerunning tests. |
+| November 22: Video 1 preparation | ChatGPT/Codex; exact model/version not exposed in this session | Prepared a timed spoken rehearsal script and exact screen actions using existing memo history and student experiment evidence; added recording/upload/caption instructions. The script is disclosed AI assistance, not an actual transcript or evidence of a completed recording. |
 
 Specific AI-assisted outputs corrected or qualified during review:
 
