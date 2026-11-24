@@ -81,7 +81,7 @@ This checks raw-response hashes and reconstructs the later comparison dataset an
 | `docs/changed-input-results-acwi.md` | Student interpretation and nine before/after/restored screenshots |
 | `docs/source-limitations-review.md` | Reviewed source evidence, unresolved original-vintage/rights gaps, and decision consequences |
 | `docs/data-card-dgs10.md` | Point-in-time signal definition, timing, revision treatment, and use rule |
-| `docs/video-*-script.md` | Preparation cues; actual recordings and transcripts remain required |
+| `docs/video-*-script.md` | Preparation cues; final video links and supplied transcripts are indexed in manifest.csv |
 | `manifest.csv` | Brightspace submission index; complete video URLs, durations, timestamps, access checks, and frozen-commit fields |
 
 ## Sources and limitations

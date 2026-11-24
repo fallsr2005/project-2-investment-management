@@ -1,6 +1,6 @@
 # Final Project 2 submission checklist
 
-This is a working checklist derived from the professor's Project 2 directions, official student checklist, and supplied Brightspace rubric; it is not an instructor-issued document. Current written materials are aligned; all three video links and supplied transcripts are saved. Final caption review and submission remain incomplete. Open source gaps are distinguished from completed documentary review.
+This is a working checklist derived from the professor's Project 2 directions, official student checklist, and supplied Brightspace rubric; it is not an instructor-issued document. Current written materials are aligned; all three video links and supplied transcripts are saved. The student confirmed the videos and transcripts are final and correct; Brightspace submission remains to be completed. Open source gaps are distinguished from completed documentary review.
 
 - [x] Build app, shared engine, mandate, two baselines with verdicts, stress controls and governance rules.
 - [x] Preserve the last executed 17-test/export verification evidence and partner-reported cold-run record.
@@ -17,14 +17,14 @@ This is a working checklist derived from the professor's Project 2 directions, o
 - [x] Reconcile Video 1 caption timing: student supplied the final matching SRT ending at 2:42.602, consistent with the reported 2:42 YouTube display; spoken wording retained.
 - [x] Record/upload Video 2: 4:51 shown in supplied YouTube Studio screenshot; YouTube link recorded and Incognito access confirmed by student; supplied transcript saved.
 - [x] Receive and save the student's final corrected Video 2 SRT; SGOV and omits corrected; 43 cues end at 4:50.160, within the displayed 4:51 runtime.
-- [ ] Confirm Video 2 audio and visual evidence, including webcam, code and actual test command/result, are clear in the final video.
+- [x] Student confirmed the videos and transcripts are final and correct; audio/visual checks are student-reported.
 - [x] Receive Video 3 link and student confirmation that requested checks are good; supplied captions end at 4:14.720. Opening live app/webcam and playback checks are student-reported rather than independently viewed.
 - [x] Replace Video 3's transcript placeholder with the 30 timestamped cues from the supplied SRT; preserve supplied words and timing.
-- [ ] Compare Video 3 captions SGV at 1:40 and 50 59 monthly at 2:58 with the audio; correct recognition errors only. Confirm exact YouTube runtime for the manifest.
-- [ ] Fill manifest YouTube URLs, actual durations, timestamp indices, final access checks and frozen-commit fields. No required field may remain `PENDING` at submission.
+- [x] Student accepted Video 3 and its supplied transcript as final and correct; supplied wording retained. Manifest records the measured caption endpoint, not an independently observed YouTube runtime.
+- [x] Populate manifest with all video URLs, available duration evidence, timestamp indices, student video checks and frozen artifact commit. Repository access remains an explicit submission check.
 - [ ] Confirm the final app is ready for the recording/final machine and that README-only setup is usable. If another test/run is performed, record its actual result; do not relabel prior evidence as a new run.
 - [ ] Verify final instructor repository access and every YouTube link logged out; retain access through the appeal period.
-- [ ] Freeze the final commit after recordings/transcripts and all material edits are complete; ensure displayed results, memo, transcripts and manifest agree.
+- [x] Freeze the submission artifacts at the commit recorded in manifest.csv; preserve original results and student-approved transcripts.
 - [ ] Submit repository/video links, manifest, transcripts and the same `docs/decision-memo.md` / `docs/validation-and-ai-use.md` files in Brightspace as required; save the receipt.
 
 Licensing remains a data-integrity rubric consideration and the documented permission limitation remains open. A separate Yahoo permission letter, an independently timestamped October receipt, and a replacement dataset are not listed as standalone Project 2 deliverables; this checklist does not add them as submission requirements. Disclosure does not establish permission or guarantee full credit.
