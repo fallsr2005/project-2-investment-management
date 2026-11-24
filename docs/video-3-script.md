@@ -12,7 +12,7 @@ The [official Video 3 requirement](https://github.com/CinderZhang/FIN43900-Fall2
 
 ## Prepare before recording
 
-1. Open the running app in Chrome, usually [localhost:8501](http://localhost:8501). You do not need GitHub, PowerShell, tests, slides, or the memo on screen for this video.
+1. Open **Google Chrome**. Click its address bar, type **`http://localhost:8501`**, and press **Enter**. Use that browser tab for the recording; do not Ctrl+click the address inside VS Code or try to open the app inside this guide. You do not need GitHub, PowerShell, tests, slides, or the memo on screen for this video. If Chrome says it cannot connect, the app server needs restarting; the address works only while the local server is running.
 2. Set **All 59 monthly returns**, **minimum SGOV 10%**, **cost 0.00**, **ACWI adjustment 0.00**, and no uploaded CSV.
 3. Confirm the base table shows **70% SGOV / 30% ACWI**, **6.02%** net estimate, **4.56%** volatility.
 4. Practice scrolling to these headings: **Constrained portfolio and required baselines → Standard stress suite → Decision rule → Point-in-time signal — DGS10**. Start the actual recording back at the title/mandate and base portfolio.
