@@ -16,7 +16,7 @@ This is a working checklist derived from the professor's Project 2 directions, o
 - [x] Record/upload Video 1 and save its student-supplied corrected transcript. Student confirmed successful audio/visual/access checks and reported a YouTube runtime of 2:42; runtime recorded in manifest.
 - [x] Reconcile Video 1 caption timing: student supplied the final matching SRT ending at 2:42.602, consistent with the reported 2:42 YouTube display; spoken wording retained.
 - [x] Record/upload Video 2: 4:51 shown in supplied YouTube Studio screenshot; YouTube link recorded and Incognito access confirmed by student; supplied transcript saved.
-- [ ] Finish Video 2 caption review against audio, including SOG/SGOV and emits/omits; publish matching corrections and provide the final SRT if those were caption errors.
+- [x] Receive and save the student's final corrected Video 2 SRT; SGOV and omits corrected; 43 cues end at 4:50.160, within the displayed 4:51 runtime.
 - [ ] Confirm Video 2 audio and visual evidence, including webcam, code and actual test command/result, are clear in the final video.
 - [ ] Record Video 3 ≤5:00, opening with the live app and both disclosures; use a small webcam view unless accommodated.
 - [ ] Replace Video 3's transcript placeholder with a corrected actual transcript; correct captions for substantive terms, tickers, numbers and attribution. Videos 1–2 now have supplied-caption transcripts saved.
