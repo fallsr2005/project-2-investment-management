@@ -35,7 +35,7 @@ Completed and documented in [source-limitations-review.md](source-limitations-re
 | Historical material | Earlier validation preserved separately; original output and locked prediction unchanged. |
 | Video 1 | YouTube link and caption-derived timestamp index recorded; transcript saved from final student-supplied SRT ending 2:42.602. Student confirmed audio/visual/access checks and reported a 2:42 YouTube display. Caption timing discrepancy resolved by the student's final file; package freeze pending. |
 | Video 2 | Supplied YouTube link and final 43-cue transcript saved; 4:51 shown in student-supplied Studio screenshot; final caption ends 4:50.160. Student confirmed Incognito access and supplied corrected SGOV/omits captions. Narration covers code/finance/test/reproduction/limitation. Full audio/visual review remains a student check rather than independent Codex verification. |
-| Video 3 | Missing: actual ≤5:00 committee presentation opening with live app and disclosures, URL, corrected transcript/captions and timestamp index. |
+| Video 3 | Supplied YouTube link, 30-cue transcript and caption-derived index saved; last cue ends 4:14.720. Narration covers recommendation, baselines/range, stress/reset, sources/limitations, triggers and closing committee ask. Student reports requested checks good; no independent video review. Two possible caption recognition issues and exact displayed runtime remain to confirm before freeze. |
 | Manifest/access/freeze | Evidence paths updated; video fields, actual durations/timestamps, final access confirmations and frozen commit pending. |
 | Brightspace submission | Not verified; attach the same memo/validation Markdown files and supply required manifest/transcripts/links; retain receipt. |
 

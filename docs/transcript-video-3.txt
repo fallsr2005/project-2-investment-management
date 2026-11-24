@@ -1,1 +1,89 @@
-PENDING: After recording Video 3, replace this file with the corrected transcript of what was actually spoken. Confirm finance terms, tickers, numerical values, and timestamps before submitting.
+[00:00:00.240 --> 00:00:04.800]
+I use Chat GPT and Codex to help with code tests, source checks in this presentation
+
+[00:00:04.800 --> 00:00:08.880]
+draft. I'm responsible for the analysis and decision. This is education only,
+
+[00:00:08.880 --> 00:00:14.720]
+not investment advice. Here's my project 2 investment management application. I
+
+[00:00:14.720 --> 00:00:18.960]
+I recommend a conditional three-month classroom pilot reviewed monthly rather
+
+[00:00:18.960 --> 00:00:28.080]
+than full adoption. The base allocation is 70% SGOV and a 30% ACWI with a 6.02%
+
+[00:00:30.560 --> 00:00:38.800]
+net annual estimate and a 4.56% volatility. The mandate minimizes estimated volatility,
+
+[00:00:38.800 --> 00:00:50.880]
+requires at least 6% net annual return and 10% SGOV and uses long-only weights totaling 100%.
+
+[00:00:50.880 --> 00:00:56.800]
+The universe is SGOV, SCHR, USIG, and ACWI.
+
+[00:01:01.120 --> 00:01:15.120]
+So, equal weights fail the return hurdle at 3.73%. The 60% ACWI and 40% USIG benchmark
+
+[00:01:15.120 --> 00:01:20.400]
+has no SGOV and fails the reserve rule within the original candidate band.
+
+[00:01:20.400 --> 00:01:29.920]
+Base feasible grid candidates are 65 to 70% SGOV paired with 30 to 35% ACWI. Each must
+
+[00:01:29.920 --> 00:01:40.640]
+pass again after costs. Now scrolling down to the specific standard stress suit with a
+
+[00:01:40.640 --> 00:01:48.800]
+SGV of 90 and an ACWI of 10. And now I'm going to change the ACWI annual return adjustment to -3.00.
+
+[00:01:50.160 --> 00:01:57.040]
+So going back up, Windows sensitivity argues against full adoption. Last 36
+
+[00:01:57.040 --> 00:02:07.920]
+returns select 90% SGOV to 10% ACWI. A 20 point shift reducing ACWI's return
+
+[00:02:07.920 --> 00:02:15.920]
+assumption by 3 percentage points, which I just did, produces 50/50 weights, 6.01%
+
+[00:02:17.120 --> 00:02:26.960]
+estimated net returns and estimated net returns at 7.5% volatility. The portfolio still passes
+
+[00:02:26.960 --> 00:02:35.920]
+numerically, but the 20 point change and candidate band breach require a review.
+
+[00:02:35.920 --> 00:02:41.520]
+So based off of that, I would not implement that change allocation without committee reassessment.
+
+[00:02:41.520 --> 00:02:58.800]
+I'm restoring the original return adjustment which returns the allocation to 70/30.
+
+[00:02:58.800 --> 00:03:10.480]
+So now scrolling to the Point-in-time-signal - DGS10. These estimates use 50 59 monthly
+
+[00:03:10.480 --> 00:03:16.560]
+returns from adjusted prices through September 2026. They're not forecasts. The hurdle and
+
+[00:03:16.560 --> 00:03:22.880]
+reserve settings are classroom assumptions. DGS10 is a frozen November 20th monitoring
+
+[00:03:22.880 --> 00:03:28.720]
+snapshot. Original download timing and data rights remain unverified. Taxes, turnover,
+
+[00:03:28.720 --> 00:03:34.800]
+spreads, draw down, and personal liquidity needs are not modeled. Now, scrolling back
+
+[00:03:34.800 --> 00:03:46.800]
+down to the decision rule. Review a selected 20 point move costs above 25 basis points or SGOV
+
+[00:03:46.800 --> 00:03:54.800]
+outside the original 65 to 75% candidate review band. stop for infeasibility, a greater than 20
+
+[00:03:54.800 --> 00:04:01.040]
+uh point per selected or standard stress move or failed signal verification. For later decision,
+
+[00:04:01.040 --> 00:04:06.400]
+refresh the signal evidence. I asked the committee to authorize only the conditional process pilot
+
+[00:04:06.400 --> 00:04:14.720]
+with monthly reviews and these restrictions. This requests process evaluation, not trades.

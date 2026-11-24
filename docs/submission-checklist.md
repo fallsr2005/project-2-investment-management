@@ -1,6 +1,6 @@
 # Final Project 2 submission checklist
 
-This is a working checklist derived from the professor's Project 2 directions, official student checklist, and supplied Brightspace rubric; it is not an instructor-issued document. Current written materials are aligned; actual recordings and final submission are incomplete. Open source gaps are distinguished from completed documentary review.
+This is a working checklist derived from the professor's Project 2 directions, official student checklist, and supplied Brightspace rubric; it is not an instructor-issued document. Current written materials are aligned; all three video links and supplied transcripts are saved. Final caption review and submission remain incomplete. Open source gaps are distinguished from completed documentary review.
 
 - [x] Build app, shared engine, mandate, two baselines with verdicts, stress controls and governance rules.
 - [x] Preserve the last executed 17-test/export verification evidence and partner-reported cold-run record.
@@ -18,8 +18,9 @@ This is a working checklist derived from the professor's Project 2 directions, o
 - [x] Record/upload Video 2: 4:51 shown in supplied YouTube Studio screenshot; YouTube link recorded and Incognito access confirmed by student; supplied transcript saved.
 - [x] Receive and save the student's final corrected Video 2 SRT; SGOV and omits corrected; 43 cues end at 4:50.160, within the displayed 4:51 runtime.
 - [ ] Confirm Video 2 audio and visual evidence, including webcam, code and actual test command/result, are clear in the final video.
-- [ ] Record Video 3 ≤5:00, opening with the live app and both disclosures; use a small webcam view unless accommodated.
-- [ ] Replace Video 3's transcript placeholder with a corrected actual transcript; correct captions for substantive terms, tickers, numbers and attribution. Videos 1–2 now have supplied-caption transcripts saved.
+- [x] Receive Video 3 link and student confirmation that requested checks are good; supplied captions end at 4:14.720. Opening live app/webcam and playback checks are student-reported rather than independently viewed.
+- [x] Replace Video 3's transcript placeholder with the 30 timestamped cues from the supplied SRT; preserve supplied words and timing.
+- [ ] Compare Video 3 captions SGV at 1:40 and 50 59 monthly at 2:58 with the audio; correct recognition errors only. Confirm exact YouTube runtime for the manifest.
 - [ ] Fill manifest YouTube URLs, actual durations, timestamp indices, final access checks and frozen-commit fields. No required field may remain `PENDING` at submission.
 - [ ] Confirm the final app is ready for the recording/final machine and that README-only setup is usable. If another test/run is performed, record its actual result; do not relabel prior evidence as a new run.
 - [ ] Verify final instructor repository access and every YouTube link logged out; retain access through the appeal period.
