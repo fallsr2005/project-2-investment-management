@@ -1,1 +1,128 @@
-PENDING: After recording Video 2, replace this file with the corrected transcript of what was actually spoken. Confirm finance terms, tickers, numerical values, and timestamps before submitting.
+[00:00:00.000 --> 00:00:04.480]
+I used Chat GPT and Codex to help with code, tests, and source checks in this presentation
+
+[00:00:04.480 --> 00:00:08.720]
+draft. I'm responsible for the analysis and decision. This is education only not
+
+[00:00:08.720 --> 00:00:15.920]
+investment advice. Now moving on to app.py. The interface is an app.py while portfolio_engine.py
+
+[00:00:15.920 --> 00:00:21.600]
+contains the financial calculations. The app reads the saved monthly-price CSV,
+
+[00:00:21.600 --> 00:00:27.040]
+builds estimates, searches for a constraint portfolio, and evaluates both baselines.
+
+[00:00:27.040 --> 00:00:37.040]
+The CSV contains dates and adjusted prices for SGOV, SCHR, USIG, and ACWI. No live download
+
+[00:00:37.040 --> 00:00:42.160]
+is required to run this saved-data demonstration. This checks that the file has the date column and
+
+[00:00:42.160 --> 00:00:49.760]
+the four required ETF columns. This rejects missing, invalid, zero, or negative prices.
+
+[00:00:49.760 --> 00:00:55.920]
+This checks that the monthly observations are consecutive and ordered from oldest to newest.
+
+[00:00:56.800 --> 00:01:02.560]
+This divides each price by the previous month's price and subtracts one to calculate the monthly
+
+[00:01:02.560 --> 00:01:10.880]
+return. 60 prices gives 59 returns. When the shorter window is selected, this keeps the last
+
+[00:01:10.880 --> 00:01:19.680]
+36 monthly returns. This multiplies the average monthly return by 12. And this multiplies the
+
+[00:01:19.680 --> 00:01:26.160]
+monthly sample volatility by the square root of 12 to annualize it. The next function uses the matrix
+
+[00:01:26.160 --> 00:01:34.560]
+and the portfolio weights to calculate portfolio volatility. This subtracts annual implementation
+
+[00:01:34.560 --> 00:01:40.320]
+cost from the gross return estimate to calculate net return. These four checks require weights
+
+[00:01:40.320 --> 00:01:47.280]
+totaling 100%, no negative weights, the minimum SOG reserve, and the estimated net return of at
+
+[00:01:47.280 --> 00:01:53.360]
+least 6%. This loop tries every allocation on the five percentage point grid. And then this
+
+[00:01:53.360 --> 00:01:59.680]
+next line converts those units into portfolio weights. Each allocation goes through the same
+
+[00:01:59.680 --> 00:02:08.400]
+mandate checks. If the allocation passes and has lower volatility than the best one found so far,
+
+[00:02:08.400 --> 00:02:16.400]
+the code saves it. Then in line 213, this returns the lowest volatility feasible allocation found.
+
+[00:02:16.400 --> 00:02:22.000]
+If none passes, it returns no portfolio. The results is limited to the grid tested. Equal
+
+[00:02:22.000 --> 00:02:30.000]
+weight and the 60% ACWI 40% USIG benchmark use the same mandate checks making the comparisons
+
+[00:02:30.000 --> 00:02:35.680]
+consistent. If the selected portfolio or reference portfolio is infeasible, then the process stops.
+
+[00:02:35.680 --> 00:02:41.920]
+The process also stops if the standard stress suit fails its stopping rule or a selected portfolio
+
+[00:02:41.920 --> 00:02:47.200]
+weight changes by more than 20 percentage points. Implementation cost above 25 basis points
+
+[00:02:47.200 --> 00:02:52.880]
+triggers committee review. A change of exactly 20 percentage points requires review. Larger changes
+
+[00:02:52.880 --> 00:02:58.240]
+have already triggered stop above. If there are review reasons, the function returns review.
+
+[00:02:58.240 --> 00:03:03.520]
+Otherwise, it returns a conditional pilot. Passing the mandate does not automatically authorize the
+
+[00:03:03.520 --> 00:03:09.360]
+committee to use the allocation. This test first calculates the base portfolio with zero cost. It
+
+[00:03:09.360 --> 00:03:16.160]
+then searches again with 45 basis points of annual cost keeping the minimum SGOV reserve at 10%. This
+
+[00:03:16.160 --> 00:03:22.320]
+checks that the new portfolio has 40% ACWI. This checks that the net return equals gross return
+
+[00:03:22.320 --> 00:03:28.400]
+minus the annual cost. This checks that the change portfolio requires review. This applies the cost
+
+[00:03:28.400 --> 00:03:33.680]
+without changing the original weights and checks that the portfolio fails a mandate. Cost reduced
+
+[00:03:33.680 --> 00:03:40.320]
+returned at fixed weights even though searching again can find a different feasible allocation.
+
+[00:03:40.320 --> 00:03:48.320]
+Just to show, the test reports OK, meaning the specific checks passed. So,
+
+[00:03:48.320 --> 00:03:53.760]
+the live app shows the same behavior with 45 basis points of cost. I'm just going to switch that
+
+[00:03:53.760 --> 00:04:08.800]
+really quick. It selects 60% SGOV and 40% ACWI, estimates 6.32% net return and 6.03% volatility,
+
+[00:04:08.800 --> 00:04:16.560]
+and requires review at the bottom here. Costs reduce return at fixed weights. The
+
+[00:04:16.560 --> 00:04:23.040]
+higher optimized return comes from taking more equity risk. And now I'm going to restore at
+
+[00:04:23.040 --> 00:04:32.960]
+zero cost and then we get the base allocation of 70/30. A clean user follow these README steps and
+
+[00:04:32.960 --> 00:04:38.240]
+starts the app with the Streamlit command. The bundle prices reproduce the base table
+
+[00:04:38.240 --> 00:04:44.400]
+and the tests check the recorded calculations and failure conditions. The model emits taxes,
+
+[00:04:44.400 --> 00:04:50.160]
+turnover and draw down. So reproducibility does not establish suitability for an actual investor.

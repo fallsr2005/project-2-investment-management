@@ -15,8 +15,11 @@ This is a working checklist derived from the professor's Project 2 directions, o
 - [ ] Student: understand and review the final written claims, source limitations, numerical conventions, and recommendation before recording.
 - [x] Record/upload Video 1 and save its student-supplied corrected transcript. Student confirmed successful audio/visual/access checks and reported a YouTube runtime of 2:42; runtime recorded in manifest.
 - [x] Reconcile Video 1 caption timing: student supplied the final matching SRT ending at 2:42.602, consistent with the reported 2:42 YouTube display; spoken wording retained.
-- [ ] Record Video 2 ≤5:00 and Video 3 ≤5:00. Each opens with both disclosures; Video 3 opens with the live app. Use a small webcam view unless accommodated.
-- [ ] Replace Video 2 and Video 3 transcript placeholders with corrected transcripts of what was actually spoken; correct captions for substantive terms, tickers, numbers and attribution. Video 1's transcript has been saved.
+- [x] Record/upload Video 2: 4:51 shown in supplied YouTube Studio screenshot; YouTube link recorded and Incognito access confirmed by student; supplied transcript saved.
+- [ ] Finish Video 2 caption review against audio, including SOG/SGOV and emits/omits; publish matching corrections and provide the final SRT if those were caption errors.
+- [ ] Confirm Video 2 audio and visual evidence, including webcam, code and actual test command/result, are clear in the final video.
+- [ ] Record Video 3 ≤5:00, opening with the live app and both disclosures; use a small webcam view unless accommodated.
+- [ ] Replace Video 3's transcript placeholder with a corrected actual transcript; correct captions for substantive terms, tickers, numbers and attribution. Videos 1–2 now have supplied-caption transcripts saved.
 - [ ] Fill manifest YouTube URLs, actual durations, timestamp indices, final access checks and frozen-commit fields. No required field may remain `PENDING` at submission.
 - [ ] Confirm the final app is ready for the recording/final machine and that README-only setup is usable. If another test/run is performed, record its actual result; do not relabel prior evidence as a new run.
 - [ ] Verify final instructor repository access and every YouTube link logged out; retain access through the appeal period.
